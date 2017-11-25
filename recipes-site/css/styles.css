@@ -1,0 +1,126 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #660066;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/*  Header  */
+
+#header-nav {
+  background-color: #fff;
+  border-radius: 0;
+  border: 0;
+}
+#social-icon {
+	margin-bottom: 0;
+	margin-right: 20px;
+	margin-top: 40px;
+	padding-top: 30px;
+	padding-bottom: 0px;
+	/*padding-right: 20px;*/
+	
+
+}
+
+
+#logo-img {
+  background: url('../images/chef-woman2.jpg') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  /*margin-left: 0;
+  margin-bottom: 0;*/
+
+
+  /*margin: 10px 15px 10px 0;*/
+}
+.navbar-brand {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  margin-bottom: 0; 
+  margin-right: 0px;
+  margin-top: 40px;
+  
+
+
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #660066;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  text-align: center;
+  line-height: .75;
+  font-family: zapfino; 
+  /*clear: both;*/
+
+
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  /*margin-top: 0; */
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px; 
+  margin-right: 0;
+  margin-left: 0;
+  
+
+}
+#nav-list a {
+  color: #660066;
+  text-align: center;
+
+
+
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #660066;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+
+.navbar-form {
+	clear: left;
+	/*padding-right: 20px;*/
+
+
+}
+
+#search-button {
+	background: #660066;
+	color: white;
+	/*font-weight: bold;*/
+}
+
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
