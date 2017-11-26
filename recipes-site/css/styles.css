@@ -18,76 +18,62 @@ body {
 	margin-top: 40px;
 	padding-top: 30px;
 	padding-bottom: 0px;
-	/*padding-right: 20px;*/
-	
-
 }
-
 
 #logo-img {
   background: url('../images/chef-woman2.jpg') no-repeat;
-  width: 150px;
-  height: 150px;
+  width: 128px;
+  height: 143px;
   margin-top: 20px;
-  /*margin-left: 0;
-  margin-bottom: 0;*/
-
-
-  /*margin: 10px 15px 10px 0;*/
 }
+
 .navbar-brand {
   padding-top: 30px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   padding-left: 30px;
   margin-bottom: 0; 
-  margin-right: 0px;
+  margin-right: 0;
   margin-top: 40px;
-  
-
 
 }
-.navbar-brand h1 { /* Restaurant name */
+
+
+.navbar-brand h1 { 
   font-family: 'Lora', serif;
   color: #660066;
-  font-size: 1.5em;
-  text-transform: uppercase;
+  font-size: 2em;
+  text-transform: ;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   text-align: center;
   line-height: .75;
   font-family: zapfino; 
-  /*clear: both;*/
-
-
 }
+
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
 
 #nav-list {
-  /*margin-top: 0; */
   padding-top: 0;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px; 
   margin-right: 0;
   margin-left: 0;
-  
-
+  font-family: zapfino; 
 }
+
 #nav-list a {
   color: #660066;
-  text-align: center;
-
-
-
+  
 }
 #nav-list a:hover {
-  background: #E7E7E7;
+    font-size: 20px; 
 }
+
 #nav-list a span {
   font-size: 1.8em;
-
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
@@ -101,17 +87,45 @@ body {
 
 .navbar-form {
 	clear: left;
-	/*padding-right: 20px;*/
-
+  position: relative;
+  /*padding-bottom: 10px;*/
+  margin-top: 0;
 
 }
 
 #search-button {
-	background: #660066;
-	color: white;
+	color: #660066;
   vertical-align: top;
-	/*font-weight: bold;*/
 }
+
+#search-button:hover {
+  background: #660066;
+  color: #fff; 
+}
+
+#search-icon {
+position: absolute; 
+  /*top: 0;*/
+  bottom: 10px;
+  right: 15px;
+  width: 40px;
+  height: 34px;
+  /*background: #660066;*/
+  /*width: auto;*/
+}
+
+#search-icon:hover {
+  background: #660066;
+}
+.glyphicon {
+  color: #660066; 
+}
+.glyphicon:hover {
+  color: #fff; 
+}
+
+
+/* End Header */
 
 
 /* FOOTER */
@@ -119,9 +133,189 @@ body {
   margin-top: 30px;
   padding-top: 35px;
   padding-bottom: 30px;
-  background-color: #fff;
+  background-color: #AAA811;
   border-top: 0;
 }
 .panel-footer div.row {
   margin-bottom: 35px;
 }
+
+/* End Footer */
+
+
+/* HOMEPAGE */
+
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+/* End Homepage*/
+
+
+/********** Large devices only **********/
+ /* Home Page */
+
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
+
+   /* End Home Page */
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Header  */
+  
+.navbar-brand {
+padding-top: 50px;
+margin-top: 50px;
+
+}
+
+.navbar-brand h1 {  
+margin: 0;
+}
+
+.navbar-form  {
+margin-top: 20px; 
+padding-top: 0;
+
+}
+
+#social-icon {
+margin-top: 20px;
+padding-top: 0;
+}
+
+#nav-list {
+}
+  /* End Header  */
+
+   /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+ /* Header */ 
+
+
+#logo-img {
+  background: url('../images/chef-woman4.jpg') no-repeat;
+  width: 100px;
+  height: 112px; 
+  margin-left: 15px;
+
+ }
+
+.navbar-brand {
+ 
+margin-top: 40px;
+padding-left: 0px;
+}
+
+.navbar-brand h1 {  
+  
+  font-size: 1.9em;
+  margin: 0;
+  
+  }
+
+/*.navbar-form  {
+margin-top: 20px; 
+padding-top: 0;
+
+
+}*/
+
+
+#nav-list {
+
+}
+
+.navbar-header button.navbar-toggle {
+  
+  margin-top: -80px;  
+  margin-bottom: 10px;
+  margin-right: 20px;
+
+
+}
+
+/* End Header */
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (max-width: 550px) {
+
+#logo-img {
+background: url('../images/chef-woman-xxs.jpg') no-repeat;
+  width: 60px;
+  height: 68px;
+  margin-top: 40px;
+  margin-left: 10px;
+
+}
+
+ .navbar-brand {
+font-size: 1em;
+margin-left: 0;
+padding-left: 5px;
+margin-bottom: 20px;
+padding-bottom: 30px;
+}
+
+.navbar-header button.navbar-toggle {
+  
+  margin-top: -70px;
+}
+
+}
+
+/********** Super super extra small devices Only :-) (e.g., iPhone 4) **********/
+
+@media (max-width: 468px) { 
+  #logo-img {display: none;
+
+}
+
+.navbar-brand {
+font-size: 0.7em;
+margin-left: 20px;
+padding-left: 0;
+margin-bottom: 20px; }
+
+}
+
+
+
+
+
+
+
+
+
+
