@@ -22,9 +22,9 @@ body {
 }
 
 #logo-img {
-  background: url('../images/chef-woman2.jpg') no-repeat;
-  width: 128px;
-  height: 143px;
+  background: url('../images/travel-logo-large.jpg') no-repeat;
+  width: 150px;
+  height: 150px;
   margin-top: 20px;
 }
 
@@ -39,9 +39,10 @@ body {
 }
 
 
+
 .navbar-brand h1 { 
-  font-family: 'Lora', serif;
-  color: #660066;
+  
+  color: #0F5BB6;
   font-size: 2em;
   text-transform: ;
   font-weight: bold;
@@ -55,6 +56,14 @@ body {
   text-decoration: none;
 }
 
+.navbar-brand p {
+  color: #0F5BB6;
+
+  font-family: lora;
+
+  font-size: 0.8em; 
+}
+
 #nav-list {
   padding-top: 0;
   padding-bottom: 10px;
@@ -66,7 +75,7 @@ body {
 }
 
 #nav-list a {
-  color: #660066;
+  color: #0F5BB6;
   
 }
 #nav-list a:hover {
@@ -78,7 +87,7 @@ body {
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #660066;
+  border: 1px solid #0F5BB6;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
@@ -95,7 +104,7 @@ body {
 }
 
 #search-button {
-	background-color: #660066;
+	background-color: #0F5BB6;
   color: #fff;
   vertical-align: top;
 }
@@ -117,11 +126,11 @@ position: absolute;
 }
 
 #search-icon:hover {
-  background: #660066;
+  background: #0F5BB6;
 }
 
 #search-button1 {
-  background-color: #660066;
+  background-color: #0F5BB6;
   color: #fff;
   vertical-align: top;
 }
@@ -143,10 +152,10 @@ position: absolute;
 }
 
 #search-icon1:hover {
-  background: #660066;
+  background: #0F5BB6;
 }
 .glyphicon {
-  color: #660066; 
+  color: #0F5BB6; 
 }
 .glyphicon:hover {
   color: #fff; 
@@ -161,7 +170,7 @@ position: absolute;
   margin-top: 30px;
   padding-top: 35px;
   padding-bottom: 30px;
-  background-color: #660066;
+  background-color: #0F5BB6;
   /*#AAA811*/;
   border-top: 0;
 }
@@ -186,13 +195,13 @@ position: absolute;
     background-position: center center;
 }
 .slide1 {
-    background-image: url(../images/symi_1200.jpg);
+    background-image: url(../images/symi_1200.JPG);
 }
 .slide2 {
-    background-image: url(../images/lindos_1200.jpg);
+    background-image: url(../images/lindos_1200.JPG);
 }
 .slide3 {
-    background-image: url(../images/aquarium1_1200.jpg);
+    background-image: url(../images/aquarium1_1200.JPG);
 }
 /* Carousel Fade Effect */
 .carousel.carousel-fade .item {
@@ -218,6 +227,20 @@ position: absolute;
    color: #fff;
    font-size: 2em;
    
+}
+
+
+#home-tiles {
+  margin-top: 30px;
+}
+
+.menu-tile  {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
 }
 
 /* End Homepage*/
