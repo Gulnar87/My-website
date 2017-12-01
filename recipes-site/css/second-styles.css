@@ -1,4 +1,90 @@
 
+
+#glyphicon {
+   color: white;
+   background-color: white;
+}
+
+
+.slide1, .slide2, .slide3 {
+    min-height: 560px;
+    background-size: cover;
+    background-position: center center;
+}
+.slide1 {
+    background-image: url(../images/jumbotron_1200.jpg);
+}
+.slide2 {
+    background-image: url(../images/novruz-1200.jpg);
+}
+.slide3 {
+    background-image: url(../images/nature-1200.jpg);
+}
+/* Carousel Fade Effect */
+.carousel.carousel-fade .item {
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -ms-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+    opacity: .5;
+}
+.carousel.carousel-fade .active.item {
+    opacity: 1;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+
+
+
+/*.slide1, .slide2, .slide3 {
+    min-height: 560px;
+    background-size: cover;
+    background-position: center center;
+}
+.slide1 {
+    background-image: url(../images/jumbotron_768.jpg);
+}
+.slide2 {
+    background-image: url(../images/jumbotron_768.jpg);
+}
+.slide3 {
+    background-image: url(../images/jumbotron_768.jpg);
+}*/
+/* Carousel Fade Effect */
+/*.carousel.carousel-fade .carousel-item {
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -ms-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+    opacity: .5;
+}
+.carousel.carousel-fade .active.carousel-item {
+    opacity: 1;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.carousel-overlay {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+}*/
+
+
 body {
   font-size: 16px;
   color: #000;
@@ -174,50 +260,9 @@ position: absolute;
 
 /* HOMEPAGE */
 
-/*.container .jumbotron {
-  box-shadow: 0 0 50px #660066;
+.container .jumbotron {
+  /*box-shadow: 0 0 50px #660066;;*/
   border: 2px solid #660066;
-}*/
-
-
-.slide1, .slide2, .slide3 {
-    min-height: 560px;
-    background-size: cover;
-    background-position: center center;
-}
-.slide1 {
-    background-image: url(../images/symi_1200.jpg);
-}
-.slide2 {
-    background-image: url(../images/lindos_1200.jpg);
-}
-.slide3 {
-    background-image: url(../images/aquarium1_1200.jpg);
-}
-/* Carousel Fade Effect */
-.carousel.carousel-fade .item {
-    -webkit-transition: opacity 1s linear;
-    -moz-transition: opacity 1s linear;
-    -ms-transition: opacity 1s linear;
-    -o-transition: opacity 1s linear;
-    transition: opacity 1s linear;
-    /*opacity: .5;*/
-}
-.carousel.carousel-fade .active.item {
-    opacity: 1;
-}
-.carousel.carousel-fade .active.left,
-.carousel.carousel-fade .active.right {
-    left: 0;
-    z-index: 2;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-
-#glyphicon {
-   color: #fff;
-   font-size: 2em;
-   
 }
 
 /* End Homepage*/
