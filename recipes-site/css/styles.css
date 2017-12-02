@@ -22,7 +22,7 @@ body {
 }
 
 #logo-img {
-  background: url('../images/travel-logo-large.jpg') no-repeat;
+  background: url('../images/travel-logo-lg.png') no-repeat;
   width: 150px;
   height: 150px;
   margin-top: 20px;
@@ -316,7 +316,7 @@ padding-top: 0;
 
 
 #logo-img {
-  background: url('../images/chef-woman4.jpg') no-repeat;
+  background: url('../images/travel-logo-md.png') no-repeat;
   width: 100px;
   height: 112px; 
   margin-left: 15px;
