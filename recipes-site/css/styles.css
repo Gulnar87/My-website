@@ -22,7 +22,7 @@ body {
 }
 
 #logo-img {
-  background: url('../images/travel-logo-lg.PNG') no-repeat;
+  background: url('../images/travel-logo-lg.png') no-repeat;
   width: 150px;
   height: 150px;
   margin-top: 20px;
@@ -188,8 +188,6 @@ position: absolute;
 
 .slide1, .slide2, .slide3 {
 
-
-    
     background-size: cover;
     background-position: center center;
 
@@ -348,7 +346,7 @@ padding-top: 0;
 
 
 #logo-img {
-  background: url('../images/travel-logo-md.PNG') no-repeat;
+  background: url('../images/travel-logo-md.png') no-repeat;
   width: 100px;
   height: 112px; 
   margin-left: 15px;
@@ -403,7 +401,7 @@ padding-top: 0;
 @media (max-width: 550px) {
 
 #logo-img {
-background: url('../images/travel-logo-sm.PNG') no-repeat;
+background: url('../images/travel-logo-sm.png') no-repeat;
   width: 60px;
   height: 68px;
   margin-top: 40px;
