@@ -22,22 +22,23 @@ body {
 }
 
 #logo-img {
-  background: url('../images/travel-logo-lg.png') no-repeat;
+  background: url('../images/travel-logo-lg.PNG') no-repeat;
   width: 150px;
   height: 150px;
   margin-top: 20px;
+
+
 }
 
 .navbar-brand {
   padding-top: 30px;
   padding-bottom: 0;
-  padding-left: 30px;
+  padding-left: 10px;
   margin-bottom: 0; 
   margin-right: 0;
   margin-top: 40px;
 
 }
-
 
 
 .navbar-brand h1 { 
@@ -183,26 +184,29 @@ position: absolute;
 
 /* HOMEPAGE */
 
-/*.container .jumbotron {
-  box-shadow: 0 0 50px #660066;
-  border: 2px solid #660066;
-}*/
 
 
 .slide1, .slide2, .slide3 {
-    min-height: 560px;
+
+
+    
     background-size: cover;
     background-position: center center;
+
+    box-shadow: 0 0 50px #0F5BB6;
+    border: 2px solid #0F5BB6;
 }
+
 .slide1 {
     background-image: url(../images/symi_1200.JPG);
 }
 .slide2 {
-    background-image: url(../images/lindos_1200.JPG);
+    background-image: url(../images/lindos_1200.JPG) ;
 }
 .slide3 {
     background-image: url(../images/aquarium1_1200.JPG);
 }
+
 /* Carousel Fade Effect */
 .carousel.carousel-fade .item {
     -webkit-transition: opacity 1s linear;
@@ -250,10 +254,10 @@ position: absolute;
  /* Home Page */
 
 @media (min-width: 1200px) {
-  .container .jumbotron {
-    background: url('../images/jumbotron_1200.jpg') no-repeat;
-    height: 836px;
-  }
+
+
+
+
 
    /* End Home Page */
 }
@@ -262,16 +266,31 @@ position: absolute;
 @media (min-width: 992px) and (max-width: 1199px) {
 
     /* Home Page */
-  .container .jumbotron {
-    background: url('../images/jumbotron_992.jpg') no-repeat;
-    height: 691px;
-  }
-  /* End Home Page */
+
+/*.slide1, .slide2, .slide3 {
+    /*height: 637px;*/
+    
 }
+/*.slide1 {
+    background-image: url(../images/symi_992.JPG) no-repeat;
+}
+.slide2 {
+    background-image: url(../images/lindos_992.JPG) no-repeat;
+}
+.slide3 {
+    background-image: url(../images/aquarium1_992.JPG) no-repeat;
+}*/
+
+
+  /* End Home Page */
+
 
 
 /********** Small devices only **********/
+
 @media (min-width: 768px) and (max-width: 991px) {
+
+
 
   /* Header  */
   
@@ -300,11 +319,20 @@ padding-top: 0;
 }
   /* End Header  */
 
+
+
+/*.slide1 {
+    background-image: url(../images/symi_768.JPG) no-repeat;
+}
+.slide2 {
+    background-image: url(../images/lindos_768.JPG) no-repeat;
+}
+.slide3 {
+    background-image: url(../images/aquarium1_768.JPG) no-repeat;
+}*/
    /* Home Page */
-  .container .jumbotron {
-    background: url('../images/jumbotron_768.jpg') no-repeat;
-    height: 535px;
-  }
+  
+
   /* End Home Page */
 }
 
@@ -312,11 +340,15 @@ padding-top: 0;
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
 
+
+
+
+
  /* Header */ 
 
 
 #logo-img {
-  background: url('../images/travel-logo-md.png') no-repeat;
+  background: url('../images/travel-logo-md.PNG') no-repeat;
   width: 100px;
   height: 112px; 
   margin-left: 15px;
@@ -371,7 +403,7 @@ padding-top: 0;
 @media (max-width: 550px) {
 
 #logo-img {
-background: url('../images/chef-woman-xxs.jpg') no-repeat;
+background: url('../images/travel-logo-sm.PNG') no-repeat;
   width: 60px;
   height: 68px;
   margin-top: 40px;
