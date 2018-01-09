@@ -12,45 +12,34 @@ body {
   background-color: #fff;
   border-radius: 0;
   border: 0;
-}
-#social-icon {
-	margin-bottom: 0;
-	margin-right: 20px;
-	margin-top: 40px;
-	padding-top: 30px;
-	padding-bottom: 0px;
+  margin-bottom: 10px;
+
 }
 
 #logo-img {
   background: url('../images/travel-logo-lg.png') no-repeat;
-  width: 150px;
-  height: 150px;
-  margin-top: 20px;
-
-
+  width: 100px;
+  height: 100px;
+  margin-right: 5px;
+  margin-top: 10px;
 }
 
 .navbar-brand {
-  padding-top: 30px;
-  padding-bottom: 0;
+  /*padding-top: 20px;*/
   padding-left: 10px;
-  margin-bottom: 0; 
-  margin-right: 0;
-  margin-top: 40px;
-
+  padding-right: 320px; 
+  margin-top: 15px;
 }
 
-
 .navbar-brand h1 { 
-  
   color: #0F5BB6;
-  font-size: 2em;
-  text-transform: ;
+  font-size: 1.7em;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   text-align: center;
   line-height: .75;
   font-family: zapfino; 
+  margin-bottom: 5px;
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -59,32 +48,16 @@ body {
 
 .navbar-brand p {
   color: #0F5BB6;
-
   font-family: lora;
-
-  font-size: 0.8em; 
+  font-size: 0.7em; 
 }
 
-#nav-list {
-  padding-top: 0;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px; 
-  margin-right: 0;
-  margin-left: 0;
-  font-family: zapfino; 
-}
+#social-icon {
+  margin-top: 10px;
+  padding-left: 330px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
-#nav-list a {
-  color: #0F5BB6;
-  
-}
-#nav-list a:hover {
-    font-size: 20px; 
-}
-
-#nav-list a span {
-  font-size: 1.8em;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
@@ -95,66 +68,31 @@ body {
   margin-top: -30px;
 }
 
-
 .navbar-form {
-	clear: left;
   position: relative;
-  /*padding-bottom: 10px;*/
-  margin-top: 0;
-
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
 }
 
 #search-button {
-	background-color: #0F5BB6;
+  background-color: #0F5BB6;
   color: #fff;
   vertical-align: top;
 }
 
-/*#search-button:hover {
-  background: #660066;
-  color: #fff; 
-}*/
-
 #search-icon {
 position: absolute; 
-  /*top: 0;*/
   bottom: 10px;
   right: 15px;
   width: 40px;
   height: 34px;
-  /*background: #660066;*/
-  /*width: auto;*/
 }
 
 #search-icon:hover {
   background: #0F5BB6;
 }
 
-#search-button1 {
-  background-color: #0F5BB6;
-  color: #fff;
-  vertical-align: top;
-}
-
-/*#search-button:hover {
-  background: #660066;
-  color: #fff; 
-}*/
-
-#search-icon1 {
-position: absolute; 
-  /*top: 0;*/
-  bottom: 10px;
-  right: 15px;
-  width: 40px;
-  height: 34px;
-  /*background: #660066;*/
-  /*width: auto;*/
-}
-
-#search-icon1:hover {
-  background: #0F5BB6;
-}
 .glyphicon {
   color: #0F5BB6; 
 }
@@ -162,7 +100,26 @@ position: absolute;
   color: #fff; 
 }
 
+#nav-list {
+  margin-top: 10px;
+  font-family: zapfino;  
 
+}
+
+
+#nav-list a {
+  color: #0F5BB6;
+  font-size: 1.2em;
+}
+
+#nav-list a:hover {
+    font-size: 1.4em; 
+
+}
+
+.dropdown-menu {
+  text-align: center;
+}
 /* End Header */
 
 
@@ -183,8 +140,6 @@ position: absolute;
 
 
 /* HOMEPAGE */
-
-
 
 .slide1, .slide2, .slide3 {
 
@@ -231,213 +186,324 @@ position: absolute;
    
 }
 
-
 #home-tiles {
   margin-top: 30px;
+
 }
 
-.menu-tile  {
+.category-tile  {
+  position: relative;
   height: 250px;
   width: 100%;
-  margin-bottom: 15px;
-  position: relative;
-  border: 2px solid #3F0C1F;
   overflow: hidden;
+  border: 2px solid #0F5BB6;
+  margin-bottom: 5px;
+  
+}
+
+.category-tile span {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  /*text-transform: uppercase;*/
+  background-color: #0F5BB6;
+  color: #fff;
+  opacity: .8;
+  
+}
+
+.menu-item {
+  padding-bottom: 10px;
+  color: black;
+  margin-bottom: 15px;
+
+}
+
+#home-tiles a:hover, #home-tiles a:focus {
+  text-decoration: none;
 }
 
 /* End Homepage*/
 
 
+
+
 /********** Large devices only **********/
- /* Home Page */
+ 
 
 @media (min-width: 1200px) {
 
-
-
-
+    /* Home Page */
 
    /* End Home Page */
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
+     
+/*  Header  */
 
-    /* Home Page */
+#logo-img {
+  background: url('../images/travel-logo-md.png') no-repeat;
+  width: 80px;
+  height: 80px; 
+  margin-top: 20px;
 
-/*.slide1, .slide2, .slide3 {
-    /*height: 637px;*/
+ }
+
+.navbar-brand {
+  padding-right: 265px; 
+}
+
+.navbar-brand h1 { 
+  font-size: 1.3em;
+}
+
+.navbar-brand p {
+  font-size: 0.5em; 
+}
+
+#social-icon {
+  padding-left: 260px;
+ 
+}
+
+#nav-list a {
+  font-size: 0.9em;
+}
+
+#nav-list a:hover {
+    font-size: 1.2em; 
+}
+
+/*  End Header  */
+
+ /* Home Page */
+
+/* End Home Page */
     
 }
-/*.slide1 {
-    background-image: url(../images/symi_992.JPG) no-repeat;
-}
-.slide2 {
-    background-image: url(../images/lindos_992.JPG) no-repeat;
-}
-.slide3 {
-    background-image: url(../images/aquarium1_992.JPG) no-repeat;
-}*/
-
-
-  /* End Home Page */
-
 
 
 /********** Small devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-
-
   /* Header  */
+
+  #logo-img {
+  background: url('../images/travel-logo-sm.png') no-repeat;
+  width: 60px;
+  height: 60px; 
+  margin-top: 30px;
+ }
   
 .navbar-brand {
-padding-top: 50px;
-margin-top: 50px;
-
+  padding-right: 0;
+  margin-top: 20px;
 }
 
-.navbar-brand h1 {  
-margin: 0;
+.navbar-brand h1 { 
+  font-size: 1.2em;
+  /*margin-bottom: 0;*/
 }
 
-.navbar-form  {
-margin-top: 20px; 
-padding-top: 0;
-
+.navbar-brand p {
+  font-size: 0.5em; 
 }
 
 #social-icon {
-margin-top: 20px;
-padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 90px;
 }
 
-#nav-list {
+
+.navbar-form {
+margin-top: 40px; 
 }
+
+#search-icon {
+  bottom: 0;
+  right: 0px;
+  width: 40px;
+  height: 34px;
+}
+
+#nav-list a {
+ 
+  font-size: 1em;
+}
+
+#nav-list a:hover {
+    font-size: 1.1em; 
+}
+
   /* End Header  */
 
-
-
-/*.slide1 {
-    background-image: url(../images/symi_768.JPG) no-repeat;
-}
-.slide2 {
-    background-image: url(../images/lindos_768.JPG) no-repeat;
-}
-.slide3 {
-    background-image: url(../images/aquarium1_768.JPG) no-repeat;
-}*/
-   /* Home Page */
-  
-
-  /* End Home Page */
 }
 
 
 /********** Extra small devices only **********/
-@media (max-width: 767px) {
-
-
-
-
+@media (min-width: 350px) and (max-width: 767px) {
 
  /* Header */ 
 
-
 #logo-img {
-  background: url('../images/travel-logo-md.png') no-repeat;
-  width: 100px;
-  height: 112px; 
-  margin-left: 15px;
+  background: url('../images/travel-logo-sm.png') no-repeat;
+  width: 60px;
+  height: 60px; 
+  margin-top: 20px;
+  margin-left: 20px;  
+  margin-right: 0;
 
  }
-
-.navbar-brand {
+  
+.navbar-header {
  
-margin-top: 40px;
-padding-left: 0px;
+  padding-bottom: 10px;
+}
+.navbar-brand {
+  margin-top: 10px;
+  padding-left: 0;
+  padding-right: 0;
+
 }
 
-.navbar-brand h1 {  
-  
-  font-size: 1.9em;
-  margin: 0;
-  
-  }
+.navbar-brand h1 { 
+  font-size: 1.1em; 
+}
 
-/*.navbar-form  {
-margin-top: 20px; 
-padding-top: 0;
-
-
-}*/
-
-
-#nav-list {
-
+.navbar-brand p {
+  font-size: 0.4em; 
 }
 
 .navbar-header button.navbar-toggle {
   
-  margin-top: -80px;  
-  margin-bottom: 10px;
-  margin-right: 20px;
+  margin-top: -50px;  
+  margin-right: 30px;
+
+}
+
+.navbar-form {
+margin-right: 10px;
+margin-left: 10px;
+
+}
+
+#search-icon {
+  bottom: 10px;
+  right: 0px;
+  width: 40px;
+  height: 34px;
+ 
+}
+
+#nav-list a {
+  font-size: 1em;
+  
+}
+#nav-list a:hover {
+    font-size: 1.2em; 
+}
+/* End Header */
+
+  /* Home Page */
+  
+.category-tile {
+    height: 250px;
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  .menu-item {
+  width: 360px;
+  margin: 0 auto 15px;
+  }
+
+ /* End Home Page */
+}
 
 
+/********** Super extra small devices Only :-)  **********/
+@media (max-width: 351px) {
+
+ /* Header */ 
+
+#logo-img {
+  background: url('../images/travel-logo-xs.png') no-repeat;
+  width: 40px;
+  height: 40px; 
+  margin-top: 25px;
+  margin-left: 20px;  
+  margin-right: 0;
+ }
+  
+.navbar-brand {
+  margin-top: 10px;
+  padding-right: 0;
+  padding-left: 0px;
+
+}
+
+.navbar-brand h1 { 
+  font-size: 0.8em;
+  margin-bottom: 0;
+  
+}
+
+.navbar-brand p {
+  font-size: 0.3em; 
+}
+
+.navbar-header button.navbar-toggle {
+
+  margin-top: -35px;  
+  margin-right: 30px;
+
+}
+
+
+.navbar-form {
+margin-right: 10px;
+margin-left: 10px;
+
+}
+
+#search-icon {
+  bottom: 10px;
+  right: 0px;
+  width: 40px;
+  height: 34px;
+ 
+}
+
+#nav-list a {
+  font-size: 0.7em;
+
+  
+}
+#nav-list a:hover {
+    font-size: 0.9em; 
 }
 
 /* End Header */
 
 
- .container .jumbotron {
-    margin-top: 30px;
-    padding: 0;
-  }
-}
-
-
-/********** Super extra small devices Only :-)  **********/
-@media (max-width: 550px) {
-
-#logo-img {
-background: url('../images/travel-logo-sm.png') no-repeat;
-  width: 60px;
-  height: 68px;
-  margin-top: 40px;
-  margin-left: 10px;
-
-}
-
- .navbar-brand {
-font-size: 1em;
-margin-left: 0;
-padding-left: 5px;
-margin-bottom: 20px;
-padding-bottom: 30px;
-}
-
-.navbar-header button.navbar-toggle {
+  /* Home Page */
   
-  margin-top: -70px;
-}
+
+  /* End Home Page */
 
 }
 
-/********** Super super extra small devices Only :-) (e.g., iPhone 4) **********/
 
-@media (max-width: 468px) { 
-  #logo-img {display: none;
 
-}
 
-.navbar-brand {
-font-size: 0.7em;
-margin-left: 20px;
-padding-left: 0;
-margin-bottom: 20px; }
 
-}
+
 
 
 
