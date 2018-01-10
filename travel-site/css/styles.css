@@ -134,6 +134,29 @@ position: absolute;
 }
 .panel-footer div.row {
   margin-bottom: 35px;
+
+}
+
+ .panel-footer section {
+   
+    text-align: center;
+  }
+
+#hours, #address, #contacts, #copy {
+
+  line-height: 2;
+  color: #fff;
+}
+
+#social-icon-footer {
+ margin-top: 20px;
+
+}
+
+#hours > span, #address > span,  #contacts > span {
+  font-size: 1.3em;
+  font-family: zapfino; 
+  
 }
 
 /* End Footer */
@@ -141,7 +164,7 @@ position: absolute;
 
 /* HOMEPAGE */
 
-.slide1, .slide2, .slide3 {
+.slide {
 
     background-size: cover;
     background-position: center center;
@@ -150,7 +173,7 @@ position: absolute;
     border: 2px solid #0F5BB6;
 }
 
-.slide1 {
+/*.slide1 {
     background-image: url(../images/symi_1200.JPG);
 }
 .slide2 {
@@ -158,7 +181,7 @@ position: absolute;
 }
 .slide3 {
     background-image: url(../images/aquarium1_1200.JPG);
-}
+}*/
 
 /* Carousel Fade Effect */
 .carousel.carousel-fade .item {
@@ -237,6 +260,11 @@ position: absolute;
 @media (min-width: 1200px) {
 
     /* Home Page */
+
+/* .panel-footer div.row {
+  padding-top: 20px;
+  
+}*/
 
    /* End Home Page */
 }
@@ -343,11 +371,22 @@ margin-top: 40px;
 
   /* End Header  */
 
+
+/*  Footer */
+.panel-footer section {
+    margin-bottom: 30px;
+   
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0;  
+  }
+  /* End Footer */
+  
 }
 
 
 /********** Extra small devices only **********/
-@media (min-width: 350px) and (max-width: 767px) {
+@media (min-width: 408px) and (max-width: 767px) {
 
  /* Header */ 
 
@@ -410,10 +449,25 @@ margin-left: 10px;
 }
 /* End Header */
 
+  /*    Footer    */
+
+  .panel-footer section {
+    margin-bottom: 30px;
+    
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0;  
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+
+  /*      End Footer      */
+
   /* Home Page */
   
 .category-tile {
-    height: 250px;
+    
     width: 360px;
     margin: 0 auto 15px;
   }
@@ -424,11 +478,12 @@ margin-left: 10px;
   }
 
  /* End Home Page */
+
 }
 
 
 /********** Super extra small devices Only :-)  **********/
-@media (max-width: 351px) {
+@media (max-width: 407px) {
 
  /* Header */ 
 
@@ -491,11 +546,29 @@ margin-left: 10px;
 
 /* End Header */
 
+/* Footer */
+   .panel-footer section {
+    margin-bottom: 30px;
+    
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0;  
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+
+/* End Footer */
 
   /* Home Page */
-  
+  .category-tile{
+    width: 280px;
+    margin: 0 auto 15px;
+  }
 
   /* End Home Page */
+
+   
 
 }
 
