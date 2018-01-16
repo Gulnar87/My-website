@@ -30,21 +30,14 @@ function displayQuestions(questions){
 
 	var output = [];
 	var ans; 
-  
-// var q = quizContainer.querySelectorAll('.questionNumbers');
-var questNum = 1; 
+
+var questionNumber= 1; 
+
 
 	for (var i = 0; i <questions.length; i++){
 		ans = []; 
       
-
- 	    
-
 		for (current in questions[i].answers) {
-
-       
- 
-         
       
           var html = '<label class="btn btn-primary"><input type="radio" name="question%i%" value="%current%" autocomplete="off">%answer%</label>';
           var newHtml = html.replace('%i%', i);
@@ -53,31 +46,20 @@ var questNum = 1;
 
              ans.push(newHtml);
 
-      
      
          }
-         
-
-      newHtml = '<div class="slide slide-quiz"><div class="question">%question%</div><small class="%questionNumbers%"></small>';																								    
-      newHtml = newHtml.replace('%question%', questNum++ + ' out of ' + questions.length);
-      newHtml = newHtml.replace('%questionNumbers%',  )
+        
+      newHtml = '<div class="slide slide-quiz"><div class="question">%question%</div><p class="questionNumber">%questionNumbers%</p>';																								    
+      newHtml = newHtml.replace('%question%',  questions[i].question);
+      newHtml = newHtml.replace('%questionNumbers%', questionNumber++ + ' out of ' + questions.length); 
       newHtml += '<div class="ans"><div class="btn-group btn-group-vertical answers" data-toggle="buttons">' + ans.join('') + '</div></div></div>';
       output.push(newHtml); 
  	       
-
-		
-      
-
-
 			
 	} 
 
-
+       
 	quizContainer.innerHTML = output.join(''); 
-
-
-	
-
 	
 }
 

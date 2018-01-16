@@ -710,11 +710,9 @@ margin-left: 10px;
 
 
 .question {
-font-weight: 200; 
-padding-bottom: 20px;
-padding-top: 20px;
 text-align: center;
-font-size: 1.5em;
+font-size: 1.2em;
+padding: 10px;
 
 }
 .ans {
@@ -725,12 +723,13 @@ font-size: 1.5em;
 
 }
 
-.btn{
+.btn {
 
   margin-bottom: 10px;
    text-align: center;
    background-color: white;
    color: #0F5BB6;
+
 
 }
 
@@ -770,12 +769,22 @@ background-color: red;
 
 #quiz-container{
   position: relative;
-  height: 450px;
+  height: 400px;
   margin-top: 40px;
 }
 
 
 #submit, #previous, #next {
+
   
   width: 150px;
+ 
+ }
+
+
+ .questionNumber {
+
+text-align: center;
+
+
  }
