@@ -1,21 +1,21 @@
-// $(function () { 
+$(function () { 
 
-//   $("#navbarToggle").blur(function (event) {
-//     var screenWidth = window.innerWidth;
-//     if (screenWidth < 768) {
-//       $("#collapsable-nav").collapse('hide');
-//     }
-//   });
+  $("#navbarToggle").blur(function (event) {
+    var screenWidth = window.innerWidth;
+    if (screenWidth < 768) {
+      $("#collapsable-nav").collapse('hide');
+    }
+  });
 
-//   $("#navbarToggle").click(function (event) {
-//     $(event.target).focus();
-//   });
-// });
+  $("#navbarToggle").click(function (event) {
+    $(event.target).focus();
+  });
+});
 
 
-// (function (global){
+(function (global){
 
-// })(window); 
+})(window); 
 
 
 
@@ -62,7 +62,6 @@
 // //   }
 // // };
 
-
 // var displayDate = function (){
 // var toDay, year, month, months,  day, days, dates, hour, minutes, prepand; 
 //  toDay = new Date();
@@ -73,8 +72,7 @@
 // days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 // dates = toDay.getDate();
 
-// document.querySelector('#date').textContent =  'Today is: ' + dates + ' ' +  months[month] + ' ' + year + ', ' + days[day];
- 
+
 //  hour = toDay.getHours(); 
 //  minutes = toDay.getMinutes(); 
 //   prepand = (hour >= 12)? " PM ":" AM ";
@@ -83,6 +81,9 @@
 //   minutes = (minutes < 10)? '0' + minutes : minutes;
 
 //  document.querySelector('#time').textContent = 'Current time is: '  + hour + ': ' + minutes +  prepand ; 
+//  document.querySelector('#date').textContent =  'Today is: ' + dates + ' ' +  months[month] + ' ' + year + ', ' + days[day];
+
+
 
 
 // }; 
@@ -94,7 +95,7 @@
 // // On first load, show home view
 // showLoading("#main-content");
 // $ajaxUtils.sendGetRequest(
-//   homeHtml,
+//   homeHtml, 
 //   function (responseText) {
 //     document.querySelector("#main-content")
 //       .innerHTML = responseText;
@@ -105,7 +106,7 @@
 
 
 // global.$dc = dc;
- 
+
 
 // })(window);
 
@@ -131,37 +132,39 @@
 // document.querySelector('#button').addEventListener('click', sayWelcome);
 
 
-(function(window){
+// (function(window){
 
-  function displayDate (){
- var toDay, year, month, months,  day, days, dates, hour, minutes, prepand; 
- toDay = new Date();
- year = toDay.getFullYear();
-month = toDay.getMonth();
-months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September','October' ,'November', 'December']; 
-day = toDay.getDay();
-days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-dates = toDay.getDate();
+//   function displayDate (){
+//  var toDay, year, month, months,  day, days, dates, hour, minutes, prepand; 
+//  toDay = new Date();
+//  year = toDay.getFullYear();
+// month = toDay.getMonth();
+// months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September','October' ,'November', 'December']; 
+// day = toDay.getDay();
+// days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+// dates = toDay.getDate();
 
-document.querySelector('#date').textContent =  'Today is: ' + dates + ' ' +  months[month] + ' ' + year + ', ' + days[day];
+// document.querySelector('#date').textContent =  'Today is: ' + dates + ' ' +  months[month] + ' ' + year + ', ' + days[day];
  
- hour = toDay.getHours(); 
- minutes = toDay.getMinutes(); 
-  prepand = (hour >= 12)? " PM ":" AM ";
-  hour = (hour >= 12)? hour - 12: hour;
-  hour = (hour < 10)? '0' + hour : hour;
-  minutes = (minutes < 10)? '0' + minutes : minutes;
+//  hour = toDay.getHours(); 
+//  minutes = toDay.getMinutes(); 
+//   prepand = (hour >= 12)? " PM ":" AM ";
+//   hour = (hour >= 12)? hour - 12: hour;
+//   hour = (hour < 10)? '0' + hour : hour;
+//   minutes = (minutes < 10)? '0' + minutes : minutes;
 
 
- document.querySelector('#time').textContent = 'Current time is: '  + hour + ': ' + minutes +  prepand ; 
+//  document.querySelector('#time').textContent = 'Current time is: '  + hour + ': ' + minutes +  prepand ; 
 
 
-}
+// }
 
 
- window.displayDate = displayDate();
+//  window.displayDate = displayDate();
 
 
-})(window);
+
+
+// })(window);
 
 
