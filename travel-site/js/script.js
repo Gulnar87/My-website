@@ -132,39 +132,39 @@ $(function () {
 // document.querySelector('#button').addEventListener('click', sayWelcome);
 
 
-// (function(window){
+(function(window){
 
-//   function displayDate (){
-//  var toDay, year, month, months,  day, days, dates, hour, minutes, prepand; 
-//  toDay = new Date();
-//  year = toDay.getFullYear();
-// month = toDay.getMonth();
-// months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September','October' ,'November', 'December']; 
-// day = toDay.getDay();
-// days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-// dates = toDay.getDate();
+  function displayDate (){
+ var toDay, year, month, months,  day, days, dates, hour, minutes, prepand; 
+ toDay = new Date();
+ year = toDay.getFullYear();
+month = toDay.getMonth();
+months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September','October' ,'November', 'December']; 
+day = toDay.getDay();
+days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+dates = toDay.getDate();
 
-// document.querySelector('#date').textContent =  'Today is: ' + dates + ' ' +  months[month] + ' ' + year + ', ' + days[day];
+document.querySelector('#date').textContent =  'Today is: ' + dates + ' ' +  months[month] + ' ' + year + ', ' + days[day];
  
-//  hour = toDay.getHours(); 
-//  minutes = toDay.getMinutes(); 
-//   prepand = (hour >= 12)? " PM ":" AM ";
-//   hour = (hour >= 12)? hour - 12: hour;
-//   hour = (hour < 10)? '0' + hour : hour;
-//   minutes = (minutes < 10)? '0' + minutes : minutes;
+ hour = toDay.getHours(); 
+ minutes = toDay.getMinutes(); 
+  prepand = (hour >= 12)? " PM ":" AM ";
+  hour = (hour >= 12)? hour - 12: hour;
+  hour = (hour < 10)? '0' + hour : hour;
+  minutes = (minutes < 10)? '0' + minutes : minutes;
 
 
-//  document.querySelector('#time').textContent = 'Current time is: '  + hour + ': ' + minutes +  prepand ; 
+ document.querySelector('#time').textContent = 'Current time is: '  + hour + ': ' + minutes +  prepand ; 
 
 
-// }
+}
 
 
-//  window.displayDate = displayDate();
+ window.displayDate = displayDate();
 
 
 
 
-// })(window);
+})(window);
 
 
