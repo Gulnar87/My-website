@@ -3,11 +3,6 @@ body {
  font-family: 'Raleway', sans-serif;
 }
 
-canvas {
-  height: 120px;
-  width: 120px; 
-}
-
 
 #background {
   position: relative;
@@ -288,11 +283,7 @@ background: #383838;
   font-size: 14px;
   color: rgb(122, 122, 122);
   line-height: 1.714;
-
-
-  
 }
-
 
 #offers {
 height: auto;
@@ -359,14 +350,8 @@ overflow: hidden;
 
 }
 
-.features-col {
-
-}
-
 .features-description {
   padding-left: 15px; 
- 
-
   /*margin-left: 5px;*/
 }
 
@@ -445,11 +430,138 @@ overflow: hidden;
   height: auto;
   background-color: #383838;
   padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
-#sampleWorks{
- height: auto;
- background-color: #fff;
+div .demo, div .demo1, div .demo2, div .demo3, div .demo4, div .demo5  {font-size:0;
+
+}
+
+canvas {
+  height: 120px;
+  width: 120px; 
+}
+
+.circles-row {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#skills .circle-col {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.circle {
+height:  120px;
+
+}
+
+.circle-titles {
+  font-size: 14px;
+  color: rgb(138, 138, 138);
+  font-weight:  600;
+  text-transform: uppercase;
+  line-height: 1.143;
+}
+
+
+#sampleWorks {
+  height: auto;
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+
+.works-columns {
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 6px;
+}
+
+.images {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  height: auto;
+  width: 100%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.images:hover .image{
+  opacity: 0.3;
+  
+}
+
+.images:hover .middle {
+  opacity: 0.9;
+  background-color: #00a99d;
+
+}
+
+.text {
+  position: absolute;
+  bottom: 23%;
+  color: white;
+  font-size: 14px;
+  padding: 16px 32px;
+ 
+}
+
+.text span {
+  font-size: 12px;
+}
+
+.sample-icon {
+  position: absolute;
+  top: 8%;
+  right: 35%;
+}
+
+.likes {
+  position: absolute;
+  color:#fff;
+  bottom: 10%;
+  right: 40%;
+  font-size: 12px;
+}
+
+
+#worksButton {
+  background-color: #00a99d;
+  color: #e4e4e4;
+  font-weight: 600;
+  width: 60%;
+  text-transform: capitalize;
+  margin-left:  20%;
+  margin-right: 20%;
+  margin-top: 2%;
+  text-decoration: none; 
+
+}
+
+#section-icon3 {
+  position: absolute; 
+  bottom: -4.6%;
+  right: 48%;
+
 }
 
 #facts {
@@ -468,15 +580,6 @@ overflow: hidden;
    height: auto; 
   background-color: #fff;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -840,133 +943,7 @@ left: 43%;
 
 
 
-/*
-.progress-bar div {
-  position: absolute;
-  height: 110px;
-  width: 110px;
-  border-radius: 50%;
-}
-
-.progress-bar div span {
-  position: absolute;
-  font-family: Arial;
-  font-size: 20px;
-  line-height: 110px;
-  height: 100px;
-  width: 100px;
-  left: 4.6px;
-  top: 4.6px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: white;
-}
-
-
-
-.progress-bar .rotate {
-  clip: rect(0 70px 140px 0);
-  
-}
-
-.progress-bar .left {
-  clip: rect(0 70px 140px 0);
-
-}
-
-
-.progress-bar .right {
-  clip: rect(0 70px 140px 0);
-  
-}
-
-
-.progress-bar {
-background-color: transparent;
-}
-
-
-.progress-bar .rotate {
-
-  background-color: #00a99d;
-}
-
-
-.progress-bar span {
- color:  #e4e4e4;
- 
-}
-
-.progress-bar div span {
-  background-color: #383838;
-}
-
-
-.progress-bar .right {
-  background-color: #00a99d;
-}
-*/
-
-/*
-.progress-bar div span {
-
- 
-  height: 130px;
-  width: 130px;
-  left: 10.5px;
-  top: 10.5px;
- 
- 
-}*/
-
-
-
-div .demo, div .demo1, div .demo2, div .demo3, div .demo4, div .demo5  {font-size:0;
-
-}
-
-
-
-.circle {
-height:  120px;
-
-}
-
-
-
-.first {
-
-  padding-right: §5px;
-  padding-left: 15px;
-}
-
-#skills .circles {
- padding-right: 0;
- padding-left: 0;
-}
-
-#skills .col-12 {
-
-text-align: center;
-
-
-}
-
-.circle-titles {
  
 
-font-size: 14px;
-  color: rgb(138, 138, 138);
-  font-weight:  600;
-  text-transform: uppercase;
-  line-height: 1.143;
 
-}
-
-
-#skills {
-  padding-right: 40px;
-  padding-left: 40px;
-
-}
 
