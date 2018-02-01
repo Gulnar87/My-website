@@ -1,5 +1,36 @@
 
 
+$(document).ready(function(){
+ $('#search').on("click",(function(e){
+  $(".form-inline").addClass("sb-search-open");
+    e.stopPropagation()
+  }));
+   $(document).on("click", function(e) {
+    if ($(e.target).is("#search") === false && $(".form-control").val().length == 0) {
+      $(".form-inline").removeClass("sb-search-open");
+    }
+  });
+    $(".form-control-submit").click(function(e){
+      $(".form-control").each(function(){
+        if($(".form-control").val().length == 0){
+          e.preventDefault();
+          $(this).css('border', '1px solid grey');
+        }
+    })
+  }) 
+})
+
+
+
+
+function hover(element) {
+    element.setAttribute('src', 'images/facts/shape-hovered.png');
+}
+function unhover(element) {
+    element.setAttribute('src', 'images/facts/shape.png');
+}
+
+
  
 $('.demo').circleGraphic({color:'#00a99d'});
 
@@ -51,36 +82,15 @@ $(document).ready(function() {
 
 
 
-// $(document).ready(function(){
-//   $('#search').on("click",(function(e){
-//   $(".form-group").addClass("sb-search-open");
-//     e.stopPropagation()
-//   }));
-//    $(document).on("click", function(e) {
-//     if ($(e.target).is("#search") === false && $(".form-control").val().length == 0) {
-//       $(".form-group").removeClass("sb-search-open");
-//     }
-//   });
-//     $(".form-control-submit").click(function(e){
-//       $(".form-control").each(function(){
-//         if($(".form-control").val().length == 0){
-//           e.preventDefault();
-//           $(this).css('border', '2px solid red');
-//         }
-//     })
-//   })
-// }) 
+
+  
+
+ 
+
+
+ 
 
 
 
 
 
-
-
-  $(function(){
-         // When the toggle areas in your navbar are clicked, toggle them
-         $("#search-button, #search-icon").click(function(e){
-             e.preventDefault();
-             $("#search-button, #search-form").toggle();
-         });
-      }) 

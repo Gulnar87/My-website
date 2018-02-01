@@ -12,14 +12,12 @@
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bootstrap-social.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-  
-
   </head>
 <body>
  <header>
- 	 <nav id="header-nav" class="navbar navbar-default">
- 		 <div class="container">
- 			 <div class="navbar-header">
+ 	  <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+ 		  <div class="container">
+ 			  <div class="navbar-header">
           <a href="index.html" class="pull-left visible-md visible-lg visible-sm visible-xs">
             <div id="logo-img"></div>
           </a> 
@@ -33,33 +31,35 @@
             <a href="https://www.facebook.com/" target="_blank" class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a>
             <a href="https://www.pinterest.com/" target="_blank" class="btn btn-social-icon btn-pinterest"><span class="fa fa-pinterest"></span></a>
          </div>
- 				  <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+ 				 <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
- 			  </div>
+         </button>
+ 			  </div> <!-- navbar-header ends here  -->
  		    <div id="collapsable-nav" class="collapse navbar-collapse"> 
-         <div>
-            <form class="navbar-form navbar-right">
-             <div class="form-group">  
-               <input type="text" class="form-control" placeholder="Search Website"> 
-               <button id="search-button" type="submit" class="btn btn-default hidden-xs hidden-sm">Search</button>
-               <button id="search-icon" type="submit" class="btn btn-default visible-xs visible-sm"> <span class="glyphicon glyphicon-search"></span></button>
-             </div>
-           </form>
-         </div>
-         <div>
- 				   <ul id="nav-list" class="nav navbar-nav text-center">
+          <div>
+            <div class="navbar-right">
+              <form class="search-form" role="search">
+                <div class="form-group pull-right" id="search">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <button type="submit" class="form-control form-control-submit">Submit</button>
+                   <span class="search-label"><i class="glyphicon glyphicon-search"></i></span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div>
+ 				    <ul id="nav-list" class="nav navbar-nav text-center">
  				      <li class="visible-xs"><a href="index.html"><span class=""></span> Home</a>
               </li>
               <li class=""><a href="#">About us <span class="sr-only">(current)</span></a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Destinations <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Destinations <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Greece</a></li>
-                  <li role="separator" class="divider"></li>
+                <li role="separator" class="divider"></li>
                   <li><a href="#"> Turkey </a></li>
                   <li role="separator" class="divider"></li>
                   <li><a href="#"> Netherlands </a></li>
@@ -70,14 +70,19 @@
                 </ul>
               </li>
               <li class=""><a href="#"> Hotels <span class="sr-only">(current)</span></a></li>
-              <li class=""><a href="#"> Transportation <span class="sr-only">(current)</span></a></li>
+          <!-- <li class=""><a href="#"> Transportation <span class="sr-only">(current)</span></a></li> -->
               <li class=""><a href="#"> Contact us<span class="sr-only">(current)</span></a></li>
             </ul>
           </div>
-       </div>
- 		 </div>
- 	 </nav>
+        </div> <!-- collapsable nav ends here  -->
+ 		  </div> <!-- container ends here  -->
+ 	  </nav>
  </header>
+
+
+
+
+
   <div id="main-content" class="container">
 
     <div id="bg-fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -142,13 +147,17 @@
        
 
        <div class="col-xs-4"> 
+       
+
           <div id="date">
-            Date is </div>
+            Date is </div> <span class="fa fa-calendar" aria-hidden="true"></span>
           </div>
       
        <div class="col-xs-4">
-          <div  id="time">
+       
+          <div  id="time"> 
             time is </div>
+             <span class="fa fa-clock-o" aria-hidden="true"></span>
        </div>
      
       <div class="col-xs-4">
@@ -164,6 +173,14 @@
 
   </div> 
 
+
+
+
+
+
+
+
+
    <div id="home-tiles" class="row"> 
      <div class="col-md-4 col-sm-6 col-xs-12">  
        <a href="single-category.html">
@@ -174,14 +191,21 @@
          <div class="menu-item"> Explore the largest museums of art, natural history, science and war of the major cities. </div> 
        </a>
      </div>
+
+
      <div class="col-md-4 col-sm-6 col-xs-12">  
-       <a href="single-category.html">
+       
          <div class="category-tile">
-            <img width="360" height="250" src="images/food.jpg" alt="Lunch">
+            <img  width="360" height="250" src="images/food.jpg" alt="Lunch">
             <span> Best Restaurants</span>
          </div>
           <div class="menu-item"> Indulge into food preparation traditions, customs and dishes unique to a particular country. </div> 
-       </a>
+      
+       <div class="modal myModal">
+  <span class="close">×</span>
+  <img class="modal-content" class="img01">
+  <div class="caption"></div>
+</div>
      </div>
      <div class="col-md-4 col-sm-6 col-xs-12">  
        <a href="single-category.html">
@@ -271,6 +295,7 @@
       <div id="copy" class="text-center">&copy; Copyright Bon Voyage 2017</div>
     </div>
   </footer>
+
  <script src="js/jquery-2.1.4.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
   <script src="js/ajax.js"></script>

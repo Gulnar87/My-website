@@ -3,7 +3,8 @@ body {
   font-size: 16px;
   color: #000;
   background-color: #fff;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Oxygen', sans-serif; 
+
 }
 
 /*  Header  */
@@ -23,6 +24,7 @@ body {
   margin-right: 5px;
   margin-top: 10px;
 }
+
 
 .navbar-brand {
   /*padding-top: 20px;*/
@@ -69,27 +71,26 @@ body {
   margin-top: -30px;
 }
 
-.navbar-form {
+/*.navbar-form {
   position: relative;
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 0px;
 
   border: 0;
-}
+}*/
 
 #search-button {
-  background-color: #0F5BB6;
-  color: #fff;
-  vertical-align: top;
+ /* background-color: #0F5BB6;
+  color: #fff;*/
+/*  vertical-align: top;*/
   /* background-color: #f3901c;
   border-radius: 5px;
  box-shadow: 0 6px 20px 0*/;
 
 }
 
-
-#search-icon {
+/*#search-icon {
 position: absolute; 
 top:0;
   bottom: 10px;
@@ -97,53 +98,153 @@ top:0;
   width: 40px;
   height: 34px;
 
-}
+}*/
 
-#search-icon:hover {
+/*#search-icon:hover {
   background: #0F5BB6;
-}
+}*/
 
-.glyphicon {
+
+
+/*.glyphicon {
   color: #0F5BB6; 
 }
 .glyphicon:hover {
   color: #fff; 
-}
+}*/
 
 #nav-list {
-  margin-top: 0px;
- /* font-family: zapfino; */ 
-  
+  margin-top: 5px;
+
+
+
 }
 
 #nav-list > li {
 margin-right: 5px;
-background-color: #f3901c;
+/*padding: 0;*/
+width: 170px;
 border-radius: 10px;
 box-shadow: 0 6px 20px 0;
-/*text-shadow: 0px 0px 0px #000; */
-
+background: 
+  #0F5BB6;  
+ 
 
 }
 
 
 #nav-list a {
-  color: #0F5BB6;
+
+   color: #fff;
   font-size: 1.2em;
+
+ 
 }
 
 #nav-list a:hover {
-    font-size: 1.4em; 
+    font-size: 1.3em; 
+   
     -webkit-transition-duration: 0.3s; 
     transition-duration: 0.3s;
 
 }
 
 
-.dropdown-menu li {
+.dropdown-menu  {
   text-align: center;
-  
+  background: #0F5BB6;   
+ 
+ 
 }
+
+.dropdown-menu  a{
+   padding: 6px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/*  Style for form  */
+
+.search-form .form-group input.form-control::-webkit-input-placeholder{
+  display:none;
+}
+.search-form .form-group input.form-control::-moz-placeholder{
+  display:none;
+}
+.navbar-right{
+  min-width:350px; 
+}
+.navbar-right form{
+  width:100%;
+}
+.form-group{
+position:relative;
+width:0%;
+min-width:50px;
+height:50px;
+overflow:hidden;
+transition: width 1s;
+backface-visibility:hidden;
+}
+.form-group input.form-control{
+  position:absolute;
+  top:0;
+  right:0;
+  outline:none;
+  width:100%;
+  height:50px;
+  margin:0;
+  z-index:10;
+}
+input[type="text"].form-control{
+  -webkit-appearence:none;
+  -webkit-border-radius:1;
+}
+.form-control-submit,
+.search-label{
+  width:50px;
+  height:50px;
+  position:absolute;
+  right:0;
+  top:0;
+  padding:0;
+  margin:0;
+  text-align:center;
+  cursor:pointer;
+  line-height:50px;
+  background:white;
+}
+.form-control-submit{
+  background:#fff; 
+  opacity: 0;
+  color:transparent;
+  border:none;
+  outline:none;
+  z-index:-1;
+}
+.search-label{
+  z-index:90;
+  color: #0F5BB6;
+}
+.form-group.sb-search-open,
+.no-js .sb-search-open{
+  width:100%;
+}
+.form-group.sb-search-open .search-label,
+.no-js .sb-search .search-label {
+  background: #0F5BB6;
+  color: #fff;
+  z-index: 11;
+  border-radius:2px;
+}
+.form-group.sb-search-open .form-control-submit,
+.no-js .form-control .form-control-submit {
+  z-index: 90;
+}
+
+
+
+
 /* End Header */
 
 
@@ -187,6 +288,9 @@ box-shadow: 0 6px 20px 0;
 
 
 /* HOMEPAGE */
+#main-content{
+  padding-top: 200px;
+}
 
 .slide {
 
@@ -247,7 +351,8 @@ box-shadow: 0 6px 20px 0;
  
   margin-top: 30px;
   background-color: #f3901c;
-  color: #0F5BB6 ;
+  color: #b56713;
+  font-weight: 600;
   border-radius: 5px;
   
 
@@ -255,12 +360,47 @@ height: 70px;
 
  box-shadow:  0px 7px 29px 2px rgba(0,0,0,1);
 
+ /*background: linear-gradient(to right, #ff7200, #232221, #ff7200, #232221, #ff7200, #232221, #ff7200, #232221, #ff7200, #232221);
+*/
+
+
+background: linear-gradient(to right, #0F5BB6, #cbd1d6 , #0F5BB6, #cbd1d6 , #0F5BB6,  #cbd1d6 ,  #0F5BB6); 
+
+
 }
+
+
 
 #date, #time, #take-quiz {
  
  padding-top: 20px; 
+color: #ff8502; 
 }
+
+#date, #time {
+  position: relative;
+  /*margin-right: 0;
+  padding-right: 0;*/
+  right: -30px;
+
+}
+
+
+#date{
+ 
+
+}
+
+#info span {
+font-size: 20px;
+color: #b56713; 
+position: absolute;
+left: 20px;
+top: 22px;
+
+
+}
+
 
 #take-quiz button {
  border-radius: 10px;
@@ -310,8 +450,6 @@ height: 70px;
 }
 
 /* End Homepage*/
-
-
 
 
 /********** Large devices only **********/
@@ -440,7 +578,6 @@ margin-top: 40px;
 }
 
 
-
   /* End Header  */
 
 
@@ -514,13 +651,20 @@ margin-left: 10px;
 
 
 #nav-list {
- padding-right: 60px;
- padding-left: 60px;
+
+
+/* padding-right: 50px;
+ padding-left: 100px;*/
+ transform: translate( 30%, -5%);
   
 }
 
+
+
 #nav-list li{
+
   margin-top: 10px;
+  width: 300px;
 }
 
 
@@ -553,6 +697,10 @@ margin-left: 10px;
   /*      End Footer      */
 
   /* Home Page */
+
+  #main-content{
+  padding-top: 120px;
+}
   
 .category-tile {
     
@@ -660,6 +808,13 @@ margin-left: 10px;
 /* End Footer */
 
   /* Home Page */
+ 
+
+ #main-content{
+  padding-top: 110px;
+}
+  
+
   .category-tile{
     width: 280px;
     margin: 0 auto 15px;
@@ -672,13 +827,14 @@ margin-left: 10px;
 
 /*  Quiz Page  */
 
-/*.jumbotron {
+.jumbotron {
   
-
   overflow: hidden;
   border: 2px solid #0F5BB6;
   margin-bottom: 40px;
-}*/
+  background-image: url('../images/worldtravel1.jpg');
+
+}
 
 
 
@@ -688,6 +844,8 @@ margin-left: 10px;
 }
 
 .quizName {
+font-weight: 600;
+  font-size: 1.4em;
   
 }
 
@@ -712,6 +870,8 @@ margin-left: 10px;
 .question {
 text-align: center;
 font-size: 1.2em;
+font-weight: 600;
+
 padding: 10px;
 
 }
@@ -723,7 +883,7 @@ padding: 10px;
 
 }
 
-.btn {
+ label.btn {
 
   margin-bottom: 10px;
    text-align: center;
@@ -748,6 +908,9 @@ background-color: red;
 }
 
 
+
+
+
 .slide-quiz {
  position: absolute;
   left: 0px;
@@ -767,7 +930,7 @@ background-color: red;
 }
 
 
-#quiz-container{
+#quiz-container {
   position: relative;
   height: 400px;
   margin-top: 40px;
@@ -788,3 +951,17 @@ text-align: center;
 
 
  }
+
+.results {
+text-align: center; 
+height: 50px;
+margin-top: 20px; 
+background-color: #0F5BB6;
+color: #fff;
+padding: 5px;
+border-radius: 10px;
+box-shadow:  0px 7px 29px 2px rgba(0,0,0,1);
+
+}
+
+

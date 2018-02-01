@@ -15,7 +15,7 @@
   </head>
 <body>
  <header>
- 	 <nav id="header-nav" class="navbar navbar-default">
+ 	 <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
  		 <div class="container">
  			 <div class="navbar-header">
           <a href="index.html" class="pull-left visible-md visible-lg visible-sm visible-xs">
@@ -39,17 +39,19 @@
           </button>
  			  </div>
  		    <div id="collapsable-nav" class="collapse navbar-collapse"> 
-         <div>
-            <form class="navbar-form navbar-right">
-             <div class="form-group">  
-               <input type="text" class="form-control" placeholder="Search Website"> 
-               <button id="search-button" type="submit" class="btn btn-default hidden-xs hidden-sm">Search</button>
-               <button id="search-icon" type="submit" class="btn btn-default visible-xs visible-sm"> <span class="glyphicon glyphicon-search"></span></button>
-             </div>
-           </form>
-         </div>
-         <div>
- 				   <ul id="nav-list" class="nav navbar-nav ">
+          <div>
+            <div class="navbar-right">
+              <form class="search-form" role="search">
+                <div class="form-group pull-right" id="search">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <button type="submit" class="form-control form-control-submit">Submit</button>
+                  <span class="search-label"><i class="glyphicon glyphicon-search"></i></span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div>
+ 				   <ul id="nav-list" class="nav navbar-nav text-center ">
  				      <li class="visible-xs"><a href="index.html"><span class=""></span> Home</a>
               </li>
               <li class=""><a href="#">About us <span class="sr-only">(current)</span></a></li>
@@ -68,7 +70,7 @@
                 </ul>
               </li>
               <li class=""><a href="#"> Hotels <span class="sr-only">(current)</span></a></li>
-              <li class=""><a href="#"> Transportation <span class="sr-only">(current)</span></a></li>
+              <!-- <li class=""><a href="#"> Transportation <span class="sr-only">(current)</span></a></li> -->
               <li class=""><a href="#"> Contact us<span class="sr-only">(current)</span></a></li>
             </ul>
           </div>
@@ -80,24 +82,18 @@
     <div class="row"> 
       <div class="col-md-8">
 
-      	<div class="jumbotron jumboPad question_bkg">    
+      	<div class="jumbotron jumboPad question_bkg">   
            <h4 class="quizName text-center">
               How well do you know the world? <br>
-                 <!--  <small class="questionNumbers">Question
-                          3 out of 29
-                            </small> -->
                      </h4>
                        
 <div id="quiz-container">
-
   <div id="quiz"> </div>
+ 
 </div>
 
 <div class="text-center"> <button class="btn btn-primary" id="previous">Previous</button>
 <button class="btn btn-primary" id="next">Next</button> <button class="btn btn-primary" id="submit">  Submit </button></div>  
-
-
-
 <div id="results"></div>
 
  </div> 

@@ -18,13 +18,10 @@ new  Question ('In which country is there a natural gas pit nicknamed the ‘Doo
  new Question ('Name India\'s annual festival of colour that occurs after every March full Moon.', 
 	['Moli', 'Holi', 'Kholi', 'Gohli'], 1)]; 
  
-var quizContainer = document.getElementById('quiz-container');
+var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results'); 
 var submitButton = document.getElementById('submit');
    
-
-
-
 
 function displayQuestions(questions){
 
@@ -71,38 +68,47 @@ function displayResults () {
 var answerContainers = quizContainer.querySelectorAll('.answers');
 
 
-  var userAnswer = '';
-  var numCorrect = 0; 
+var userAnswer = '';
 
+var numCorrect = 0; 
 
 myQuestions.forEach(function(current, i) {
 
+
 var selector = 'input[name=question'+i+']:checked'; 
 	var userAnswer = (answerContainers[i].querySelector(selector) ||{}).value;
-   // var n = (btn[i].querySelector(selector)||{}).value; 
 
   if(parseInt(userAnswer) === current.correct) {
 
 	numCorrect++;
 
+
     answerContainers[i].querySelector('.btn').classList.add('green-focus'); 
     
-  
-
     } else {
 
-	answerContainers[i].querySelector('.btn').classList.add('red-focus'); 
+	 answerContainers[i].querySelector('.btn').classList.add('red-focus'); 
      }
 
 }); 
 
-   resultsContainer.innerHTML = numCorrect + ' correct answers out of ' + myQuestions.length + ' questions';
+if(numCorrect === 5 ) {
+
+  resultsContainer.innerHTML = numCorrect + ' correct answers out of ' + myQuestions.length + ' questions. Excellent! You are super smart!';
+  resultsContainer.classList.add('results');
+
+} else if (numCorrect <= 2)  {
+
+   resultsContainer.innerHTML = numCorrect + ' correct answers out of ' + myQuestions.length + ' questions. Poor! Try again!';
+   resultsContainer.classList.add('results');
+} else {
+
+  resultsContainer.innerHTML = numCorrect + ' correct answers out of ' + myQuestions.length + ' questions. Good result!';
+   resultsContainer.classList.add('results'); 
+}
 
 
 }
-
-  
-   submitButton.addEventListener('click', displayResults);
 
 
 var previousButton = document.getElementById("previous");
@@ -110,9 +116,10 @@ var nextButton = document.getElementById("next");
 var slides = document.querySelectorAll(".slide-quiz");
 var currentSlide = 0;
 
+
 function showSlide (n){
 
-	slides[currentSlide].classList.remove('active-slide');
+  slides[currentSlide].classList.remove('active-slide');
   slides[n].classList.add('active-slide');
   currentSlide = n;
   if(currentSlide===0){
@@ -129,8 +136,11 @@ function showSlide (n){
     nextButton.style.display = 'inline-block';
     submitButton.style.display = 'none';
   }
-}
 
+
+
+  }
+    
 showSlide(0); 
 
 function showNextSlide() {
@@ -141,10 +151,16 @@ function showPreviousSlide() {
   showSlide(currentSlide - 1);
 }
 
+
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
 
 
+   submitButton.addEventListener('click', function() { 
+
+     displayResults(); 
+
+   });  
 
 
  
