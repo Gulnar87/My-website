@@ -1,5 +1,4 @@
 
-
 $(document).ready(function(){
  $('#search').on("click",(function(e){
   $(".form-inline").addClass("sb-search-open");
@@ -20,18 +19,6 @@ $(document).ready(function(){
   }) 
 })
 
-
-
-
-function hover(element) {
-    element.setAttribute('src', 'images/facts/shape-hovered.png');
-}
-function unhover(element) {
-    element.setAttribute('src', 'images/facts/shape.png');
-}
-
-
- 
 $('.demo').circleGraphic({color:'#00a99d'});
 
  $('.demo1').circleGraphic({color:'#00a99d'});
@@ -61,7 +48,6 @@ $(document).ready(function() {
         affixElement.removeClass("affix");
         wrapper.height('auto');
     }
-      
   };
   
 

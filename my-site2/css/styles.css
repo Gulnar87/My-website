@@ -44,26 +44,24 @@ body {
   /*rgb(0, 169, 157);*/
  }
 
-.text-block h3 {
+.text-block p {
  text-transform: uppercase;
  background-color: #383838;
  color: #fff;
  font-weight: 300;
  font-size: 17px;
+ padding: 5px;
+ text-align: center;
 }
 
-.text-block h3 p {
-	padding: 5px;
-}
-
-.text-block h3 span {
+.text-block p span {
 	text-transform: capitalize;
 	font-weight: 600;
 	padding-bottom: 0;
 
 }
 
- .text-block h3 > p:first-letter {
+ .text-block p:first-letter {
  color: #00a99d;
  /*rgb(0, 169, 157);*/
 }
@@ -74,22 +72,17 @@ body {
 
  #line-right {
   position: absolute;
-  width: 22%;
-  border-top: 10px double #dedede;
-  top: -3px;
-  right: 0;
-      
+  top: 4px;
+  right: 0px;     
 }
 
  #line-left {
   position: absolute;
-  width: 22%;
-  border-top: 10px double #dedede;
-  top: -3px;
-  left: 0;   
+  top: 4px;
+  left: -10px;   
 }
 
-.rounded {
+.scroll-down {
   margin-top: 30px;
 }
 
@@ -99,7 +92,6 @@ body {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
- 
 }
 
 .affix {
@@ -248,7 +240,6 @@ text-align: center;
 
 #social-icons  a:hover {
  background-color: #00a99d;
-
 }
 
 #social-icons .btn {
@@ -257,7 +248,6 @@ text-align: center;
   padding: 2px;
   border: 1px solid #777;
 }
-
 
 #map-container {
   position: relative;
@@ -281,9 +271,8 @@ width: 20%;
 
 #go-to-top {
   position: absolute;
-  bottom: -16.4%;
+  bottom: -8%;
   left: 50%;
-  transform: translate(-50%, -50%); 
 }
 
 #footer-bottom {
@@ -300,7 +289,6 @@ background: #383838;
   text-align: center;
 }
 
-
 /*  END FOOTER */
 
 
@@ -313,7 +301,7 @@ background: #383838;
 #main-content h2 {
   text-transform: uppercase;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
   font-size: 26px;
   font-weight: 600;
@@ -325,13 +313,13 @@ background: #383838;
 }
 
 #offers h2, #sampleWorks h2, #team h2, #prices h2{
- color: rgb(56, 56, 56);
+  color: rgb(56, 56, 56);
 }
 
 .subtext {
- text-align: center; 
- padding-bottom: 30px;
- font-size: 16px;
+  text-align: center; 
+  padding-bottom: 30px;
+  font-size: 16px;
   line-height: 1;
 }
 
@@ -366,11 +354,11 @@ background: #383838;
 /* Offers Section */
 
 #offers {
-height: auto;
-background-color: #fff; 
-padding-left: 20px;
-padding-right: 20px;
-padding-bottom: 20px;
+  height: auto;
+  background-color: #fff; 
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 #offers .row {
@@ -411,30 +399,23 @@ color: #fff;
 
 #section-icon {
   position: absolute; 
-  bottom: -16%;
+  bottom: -15%;
   right: 48%;
-/*  transform: translate(-10%, -140%); */
-
 }
 
 /* Amazing Features Section */
 
 #features {
-height: auto;
-background-color: #383838;
-padding-left: 20px;
-padding-right: 20px;
-overflow: hidden;
+  height: auto;
+  background-color: #383838;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden;
 }
 
-.features-icon {
-/*margin-left: 10px;*/
-
-}
 
 .features-description {
   padding-left: 15px; 
-  /*margin-left: 5px;*/
 }
 
 #features h3 {
@@ -442,7 +423,7 @@ overflow: hidden;
 }
 
 
-#ipad1 {
+.ipad1 {
   position: absolute;
   top: 20%;
   bottom: -24%;
@@ -450,7 +431,7 @@ overflow: hidden;
   transform: translate(-10%, -20%); 
  }
 
-#ipad{
+.ipad{
   position: absolute;
   bottom: -18%;
   transform: translate(-10%, -20%); 
@@ -648,7 +629,7 @@ height:  120px;
 
 #section-icon3 {
   position: absolute; 
-  bottom: -4.6%;
+  bottom: -4.1%;
   right: 48%;
 }
 
@@ -971,11 +952,11 @@ blockquote:after {
 }
 
 .btn-right{
-  padding: 1.5px 0px 1px 8px;
+  padding: 3px 0px 1px 8px;
 }
 
 .btn-left{
-  padding: 1.5px 0px 1px 6px;
+  padding: 3px 0px 1px 6px;
 }
 
 #panel2-btn .btn:hover {
@@ -1050,7 +1031,7 @@ blockquote:after {
 .btn-right2 {
   position: absolute;
   z-index: 1;
-  padding: 1.5px 0px 1px 8px;
+  padding: 3px 0px 1px 8px;
   bottom: 45%;
   right: 2%;
 }
@@ -1060,7 +1041,7 @@ blockquote:after {
   z-index: 1;
   left: 2%;
   bottom: 45%;
-  padding: 1.5px 0px 1px 6px;
+  padding: 3px 0px 1px 6px;
 }
 
 #triangle-right2 {
@@ -1251,7 +1232,7 @@ color:  rgb(228, 228, 228);
   height: auto; 
   background-color: #888;
   padding-right: 40px;
-  padding-left: 40px;
+  padding-left: 100px;
   padding-bottom: 40px;
   padding-top: 40px;
 }
@@ -1299,6 +1280,7 @@ color:  rgb(228, 228, 228);
 @media (min-width: 1200px) {
 
     /* Home Page */
+
 .team-col {
  width: 90%;
 }
@@ -1329,13 +1311,13 @@ color:  rgb(228, 228, 228);
 
 /* Main Content */
 
-#ipad1 {
+.ipad1 {
   bottom: 5%;
   right: 5px;
   transform: translate(-2%, 5%); 
  }
 
-#ipad{
+.ipad{
   bottom: -9%;
   transform: translate(3%, 14%); 
 }
@@ -1404,7 +1386,6 @@ left: 13%;
 }
 /* End Main Content */
 
-
 }
 
 /********** Medium devices only **********/
@@ -1426,28 +1407,27 @@ left: 13%;
 font-size: 22px;
  }
 
-.text-block h3 {
+.text-block p {
 
  font-size: 14px;
 }
 
-.text-block h3 p {
-  padding: 5px;
-}
-
-.text-block h3 span {
+.text-block p span {
   font-weight: 400;
 }
 
-#line-right {
-  width: 20%;   
+
+ #line-right {
+  width: 24%; 
+  top: 2.5px;   
 }
 
-#line-left {
-width: 20%; 
+ #line-left {
+  top: 2.5px;
+  width: 24%;   
 }
 
-.rounded {
+.scroll-down {
   margin-top: 20px;
 }
 
@@ -1469,14 +1449,14 @@ width: 20%;
   bottom: -14%;
 }
 
-#ipad1 {
+.ipad1 {
   bottom: 5%;
   right: 5px;
   transform: translate(4%, 32%); 
 
  }
 
-#ipad{
+.ipad{
   bottom: -7%;
   transform: translate(15%, 22%); 
 }
@@ -1615,29 +1595,26 @@ font-size: 12px;
  font-size: 18px;
  }
 
-.text-block h3 {
+.text-block p {
  font-size: 10px;
 }
 
-.text-block h3 p {
-  padding: 5px;
-}
-
-.text-block h3 span {
+.text-block p span {
   font-weight: 400;
 }
 
+
  #line-right {
-  width: 16%;
-  top: -10px;     
+  width: 20%; 
+  top: -1px;   
 }
 
  #line-left {
-  width: 16%;
-  top: -10px;
+  top: -1px;
+  width: 20%;   
 }
 
-.rounded {
+.scroll-down {
   margin-top: 15px;
 }
 
@@ -1661,14 +1638,14 @@ font-size: 12px;
 }
 
 
-#ipad1 {
+.ipad1 {
   bottom: -10%;
   right: -15%;
   transform: translate(-1%, 35%); 
 
  }
 
-#ipad{
+.ipad{
   bottom: -3%;
   transform: translate(30%, 25%); 
 }
@@ -1804,6 +1781,12 @@ blockquote:after {
   left: 18%;
 }
 
+
+#panel4 {
+  padding-left: 20px;
+}
+
+
 /* End Main Content */
 
 }
@@ -1833,32 +1816,27 @@ blockquote:after {
   font-size: 16px;
  }
 
-.text-block h3 {
+.text-block p {
  font-weight: 300;
  font-size: 8px;
 }
 
-.text-block h3 p {
-  padding: 5px;
-}
 
-.text-block h3 span {
+.text-block p span {
   font-weight: 400;
 }
 
-#line-right {
-  width: 15%;
-  top: -10px;
-  right: -10px;     
+ #line-right {
+  width: 14%; 
+  top: -3px;   
 }
 
-#line-left {
-  width: 15%;
-  top: -10px;
-  left: -10px;   
+ #line-left {
+  top: -3px;
+  width: 14%;   
 }
 
-.rounded {
+.scroll-down {
   margin-top: 10px;
 }
 
@@ -2201,7 +2179,7 @@ padding-right: 15px;
 }
 
 .team-col {
-margin-left: 50px;
+ margin-left: 50px;
  margin-bottom: 50px;
  width: 65%; }
 
@@ -2267,30 +2245,25 @@ blockquote:after {
 }
 
 .btn-right2 {
-
   bottom: 49%;
   right: 4%;
 }
 
 .btn-left2 {
-
   left: 4%;
   bottom: 49%;
-
 }
 
 /* panel 4*/
 
 #panel4 {
-  padding-right: 20px;
   padding-left: 20px;
 }
-      
 
 #panel-4-col .btn {
  margin-top: 30px;
+ float: left;
 }
-
 
 /* End Main Content */
 

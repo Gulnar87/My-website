@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="./images/logo-title.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,400i,500,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,400i,500,800"  rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-social.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -16,35 +16,58 @@
 </head>
 <body>
   <header>
-    <div  class="container-fluid">
-     <div class="row">
+    <div  class="container-fluid"> <!-- container -fluid starts here  -->
+     <div class="row"> <!-- row starts here  -->
       <div id="background" class="col-sm-12">
       <img class="img-fluid" src="http://via.placeholder.com/1920x750/888" alt="Responsive image">
       <div id="top" class="text-block"> 
         <h4 class="text-uppercase text-center"> What are you waiting for?</h4>
         <h1 class="text-uppercase"> Let's be creative!</h1>
-        <h3><p><span>Startuprr</span>, Next Generation &amp; Highly Flexible Wordpress theme </p></h3> 
-        <h2 class="text-uppercase text-center"> <hr id="line-left"><img src="./images/header/left-shapes.png" width="28" height="15" alt="shapes"> <span>Start</span> doing that<img src="./images/header/right-shapes.png" width="28" height="15" alt="shapes"><hr id="line-right"></h2> 
-      <div id="scroll"><img class="rounded mx-auto d-none d-md-block d-lg-block d-xl-block" src="./images/header/scroll-icon.png" alt="scroll" width="58" height="57"></div> 
-         <div id="scroll"><img class="rounded mx-auto d-block d-sm-block d-md-none" src="./images/header/scroll-icon-sm.png" alt="scroll" width="43" height="42"></div> 
+        <p><span>Startuprr</span>, Next Generation &amp; Highly Flexible Wordpress theme </p>       
+        <h2 class="text-uppercase text-center">
+          <svg id="line-left" width="150" height="80">
+            <defs>
+              <linearGradient id="linear-left" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%"   stop-color="#fafafa"/>
+                <stop offset="100%" stop-color="#999"/>
+              </linearGradient>
+            </defs>
+              <rect x="10" y="10" width="150" height="1" fill="url(#linear-left)" />
+              <rect x="10" y="15" width="150" height="1" fill="url(#linear-left)" />
+          </svg>
+          <img src="./images/header/left-shapes.png" width="28" height="15" alt="shapes"> <span>Start</span> doing that
+          <img src="./images/header/right-shapes.png" width="28" height="15" alt="shapes">
+          <svg id="line-right" width="150" height="80">
+           <defs>
+              <linearGradient id="linear-right" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%"   stop-color="#999"/>
+                <stop offset="100%" stop-color="#fafafa"/>
+              </linearGradient>
+            </defs>
+              <rect x="10" y="10" width="150" height="1" fill="url(#linear-right)" />
+              <rect x="10" y="15" width="150" height="1" fill="url(#linear-right)" />
+          </svg>
+        </h2> 
+        <a class="scroll" href="#go-to-top"><img class="scroll-down mx-auto d-none d-md-block d-lg-block d-xl-block" src="./images/header/scroll-icon.png" alt="scroll" width="58" height="57"></a> 
+         <a class="scroll" href="#go-to-top" ><img class="scroll-down mx-auto d-block d-sm-block d-md-none" src="./images/header/scroll-icon-sm.png" alt="scroll" width="43" height="42"></a>
         </div>
-       </div>
-       </div>
-      </div> 
+       </div> <!-- col-12 ends here  -->
+       </div> <!-- row ends here  -->
+      </div>  <!-- container ends here  -->
  	  <nav id="header-nav" class="navbar navbar-expand-lg navbar-light bg-faded" data-toggle="affix">
- 	 	  <div class="container">
+ 	 	  <div class="container"> <!-- Container starts here  -->
  			  <a class="navbar-brand" href="#">
           <img src="./images/header/logo.png" width="157" height="42" alt="logo">
         </a>
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsable-nav" aria-controls="collapsable-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="collapsable-nav">
           <ul id="nav-list" class="navbar-nav text-uppercase ml-auto text-center">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-center">
               <a class="nav-link" href="#">Portfolio</a>
             </li>
              <li class="nav-item">
@@ -63,48 +86,53 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
-         <form class="form-inline my-2 my-lg-0" id="search">
+         <form class="form-inline my-2 my-lg-0 float-right" id="search">
           <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
           <button class="form-control form-control-submit" type="submit">Search</button>
           <span class="search-label"><i class="fa fa-search"></i></span>
         </form>
+        </div>
        </div>
  	    </nav>
       <hr>
    </header>
    <div class="container-fluid" id="main-content"> <!-- Main-Content starts here  -->
       <div class="text-center sections" id="offers">  <!-- Offers  -->
-        <h2 class=""><img src="./images/offers/left.png" width="28" height="15" alt="shapes">  What we <span style="color: #00a99d"> offer </span><img src="./images/offers/right.png" width="28" height="15" alt="shapes"></h2>
+        <h2>
+          <img src="./images/offers/left.png" width="28" height="15" alt="shapes" id="shape-left"> 
+         What we <span style="color: #00a99d"> offer </span>
+         <img src="./images/offers/right.png" width="28" height="15" alt="shapes">
+        </h2>
         <div class="subtext"> We offer our customers the best services &amp; solutions, this our main service list. </div>
         <div class="row">
           <div class="col-md-4 col-sm-12 offer-columns">
-            <button type="button" class="btn btn-default btn-circle btn-xl" href=""><img class="" src="./images/offers/laptop-icon.png" alt="Responsive image" width="38" height="33">
+            <button type="button" class="btn btn-default btn-circle btn-xl"><img class="" src="./images/offers/laptop-icon.png" alt="Responsive image" width="38" height="33">
             </button> 
             <h3> Responsive &amp; Multipurpose </h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie vulputate lorem, quis ultricies magna gravida.</p>
-            <button type="button" class="btn btn-outline-secondary read-more" href=""> Read More </button> 
+            <button type="button" class="btn btn-outline-secondary read-more"> Read More </button> 
           </div>
           <div class="col-md-4 col-sm-12 offer-columns">
-              <button type="button" class="btn btn-default btn-circle btn-xl" href=""><img class="" src="./images/offers/puzzle-icon.png" alt="Responsive image" width="31" height="37">
+              <button type="button" class="btn btn-default btn-circle btn-xl"><img class="" src="./images/offers/puzzle-icon.png" alt="Responsive image" width="31" height="37">
               </button> 
               <h3> Easy Customization </h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie vulputate lorem, quis ultricies magna gravida. </p>
-              <button type="button" class="btn btn-outline-secondary read-more" href=""> Read More </button> 
+              <button type="button" class="btn btn-outline-secondary read-more"> Read More </button> 
           </div>
           <div class="col-md-4 col-sm-12 offer-columns"> 
-              <button type="button" class="btn btn-default btn-circle btn-xl" href=""><img class="" src="./images/offers/disk-icon.png" alt="Responsive image" width="38" height="37">
+              <button type="button" class="btn btn-default btn-circle btn-xl"><img class="" src="./images/offers/disk-icon.png" alt="Responsive image" width="38" height="37">
               </button> 
               <h3> Awesome friendly support </h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie vulputate lorem, quis ultricies magna gravida.</p>
-              <button type="button" class="btn btn-outline-secondary read-more" href=""> Read More </button> 
+              <button type="button" class="btn btn-outline-secondary read-more"> Read More </button> 
            </div>
-          <a class="#" href="#" id="section-icon">
-              <img class=""  src="./images/offers/section-icon.png" width="54" height="54" alt="to-top">
+          <a class="#" href="#offers" id="section-icon">
+              <img class="" src="./images/offers/section-icon.png" width="54" height="54" alt="to-offers">
           </a>
         </div>  <!-- Row ends here  -->
     </div> <!-- Offers ends here  -->
       <div class="sections" id="features">  <!-- Features -->
-        <h2 class=""><img src="./images/offers/left.png" width="28" height="15" alt="shapes">  Amazing <span style="color: #00a99d"> Features </span><img src="./images/offers/right.png" width="28" height="15" alt="shapes"></h2>
+        <h2><img src="./images/offers/left.png" width="28" height="15" alt="shapes">  Amazing <span style="color: #00a99d"> Features </span><img src="./images/offers/right.png" width="28" height="15" alt="shapes"></h2>
         <div class="subtext"> With unlimited features that we offer, we promise it's possible to make everything that was impossible for you! </div>
         <div class="row">
           <div class="col-lg-4 col-md-5 col-sm-10 col-12">
@@ -151,23 +179,23 @@
            </section>
          </div>
          <div class="col-lg-8 col-md-7 col-sm-6"> 
-            <div class="" id="ipad1"> 
-              <img class="img-fluid d-none d-none d-xl-block" src="./images/features/iPad-air1.png" width="" height="">
+            <div class="ipad1"> 
+              <img class="img-fluid d-none d-none d-xl-block" src="./images/features/iPad-air1.png" width="370" height="478" alt="iPad-air1">
             </div>
-            <div id="ipad">  
-              <img class="img-fluid d-none d-xl-block" src="./images/features/iPad-air.png" width="506" height="339">
+            <div class="ipad">  
+              <img class="img-fluid d-none d-xl-block" src="./images/features/iPad-air.png" width="506" height="339" alt="iPad-air">
             </div>
-            <div class="" id="ipad1"> 
-              <img class="img-fluid d-none d-lg-block d-xl-none" src="./images/features/iPad-air1-lg.png" width="" height="">
+            <div class="ipad1"> 
+              <img class="img-fluid d-none d-lg-block d-xl-none" src="./images/features/iPad-air1-lg.png" width="340" height="463" alt="iPad-air1">
             </div>
-            <div id="ipad">  
-              <img class="img-fluid d-none d-lg-block d-xl-none" src="./images/features/iPad-air-lg.png" width="" height="">
+            <div class="ipad">  
+              <img class="img-fluid d-none d-lg-block d-xl-none" src="./images/features/iPad-air-lg.png" width="450" height="321" alt="iPad-air">
             </div>
-            <div class="" id="ipad1"> 
-              <img class="img-fluid d-none d-md-block d-lg-none" src="./images/features/iPad-air1-md.png" width="" height="">
+            <div class="ipad1"> 
+              <img class="img-fluid d-none d-md-block d-lg-none" src="./images/features/iPad-air1-md.png" width="250" height="341" alt="iPad-air1">
             </div>
-           <div id="ipad"> 
-            <img class="img-fluid d-none d-md-block d-lg-none" src="./images/features/iPad-air-md.png" width="" height="">
+           <div class="ipad"> 
+            <img class="img-fluid d-none d-md-block d-lg-none" src="./images/features/iPad-air-md.png" width="350" height="249" alt="iPad-air">
            </div>
         </div>
        </div> <!-- row  -->
@@ -178,7 +206,7 @@
           <div class="row">
             <div class="col-2">
               <div class="more-features-icon">
-                <img class="" src="./images/features/icon1.png" alt="Responsive image" width="" height="">
+                <img class="" src="./images/features/icon1.png" alt="responsive image" width="40" height="70">
               </div>
             </div>
             <div class="col-10 more-features-description">
@@ -192,7 +220,7 @@
           <div class="row">
             <div class="col-2">
               <div class="more-features-icon">
-                <img class="" src="./images/features/icon2.png" alt="Responsive image" width="" height="">
+                <img class="" src="./images/features/icon2.png" alt="Responsive image" width="40" height="70">
               </div>
             </div>
             <div class="col-10 more-features-description">
@@ -206,7 +234,7 @@
           <div class="row">
             <div class="col-2">
               <div class="more-features-icon">
-                <img class="" src="./images/features/icon3.png" alt="Responsive image" width="" height="">
+                <img class="" src="./images/features/icon3.png" alt="Responsive image" width="40" height="70">
                 </div>
             </div>
             <div class="col-10 more-features-description">
@@ -220,7 +248,7 @@
           <div class="row"> 
             <div class="col-2">
               <div class="more-features-icon">
-                <img class="" src="./images/features/icon4.png" alt="Responsive image" width="" height="">
+                <img class="" src="./images/features/icon4.png" alt="Responsive image" width="40" height="70">
               </div>
             </div>
             <div class="col-10 more-features-description">
@@ -234,7 +262,7 @@
           <div class="row">
             <div class="col-2">
               <div class="more-features-icon">
-                <img class="" src="./images/features/icon5.png" alt="Responsive image" width="" height="">
+                <img class="" src="./images/features/icon5.png" alt="Responsive image" width="40" height="70">
               </div>
             </div>
             <div class="col-10 more-features-description">
@@ -248,7 +276,7 @@
           <div class="row">  
             <div class="col-2">
               <div class="more-features-icon">
-                <img class="" src="./images/features/icon6.png" alt="Responsive image" width="" height="">
+                <img class="" src="./images/features/icon6.png" alt="Responsive image" width="40" height="70">
               </div>
             </div>
               <div class="col-10 more-features-description">
@@ -260,13 +288,13 @@
         </div>
       </section>
       <div>
-        <a class="#" href="#" id="section-icon2">
+        <a class="#" href="#features" id="section-icon2">
           <img class=""  src="./images/features/section-icon2.png" width="54" height="54" alt="to-top">
         </a>
       </div>
     </div> <!-- End of More Features  -->
     <div class="sections" id="skills"> <!-- Skills Section starts here  -->
-      <h2 class=""><img src="./images/offers/left.png" width="28" height="15" alt="shapes"> Our powerfull <span style="color: #00a99d">skills </span><img src="./images/offers/right.png" width="28" height="15" alt="shapes"></h2>
+      <h2><img src="./images/offers/left.png" width="28" height="15" alt="shapes"> Our powerfull <span style="color: #00a99d">skills </span><img src="./images/offers/right.png" width="28" height="15" alt="shapes"></h2>
       <div class="subtext"> We're good and experienced at different things and and we promise about quality of our works!
       </div>
       <div class="row circles-row text-center">
@@ -310,19 +338,19 @@
     </div> <!-- Skills section ends here 
  -->
     <div class="sections" id="sampleWorks"> <!-- Sample Works section starts here  -->
-      <h2 class=""> <img src="./images/offers/left.png" width="28" height="15" alt="shapes"> Sample <span style="color: #00a99d"> works </span>  <img src="./images/offers/right.png" width="28" height="15" alt="shapes"> </h2>
+      <h2 class=""><img src="./images/offers/left.png" width="28" height="15" alt="shapes"> Sample <span style="color: #00a99d"> works </span>  <img src="./images/offers/right.png" width="28" height="15" alt="shapes"></h2>
         <div class="subtext"> Lets's take a look at some of the best of our works here, we love them and hope you too </div>
       <div class="row">
         <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6  text-center works-columns">
           <a href="">
             <div class="images">
-              <img class="img-fluid" src="./images/Bradley.jpg" alt="" class="image"  width="318" height="250">
+              <img class="img-fluid image" src="./images/Bradley.jpg" alt=""  width="318" height="250">
              <div class="middle text-center">
                 <img class="sample-icon img-fluid" src="./images/sampleworks/icons.png" alt="">
                 <div class="text text-center">Corporate Brochure<br><span> Illustration/print</span>
                 </div>
                <div class="likes"> 
-                 <img src="./images/sampleworks/heart.png">
+                 <img src="./images/sampleworks/heart.png" alt="heart">
                  <span> 138 </span>
                </div>
              </div>
@@ -332,13 +360,13 @@
         <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6  text-center works-columns">
           <a href="">
             <div class="images">
-              <img class="img-fluid" src="./images/Bradley.jpg" alt="" class="image"  width="318" height="250">
+              <img class="img-fluid image" src="./images/Bradley.jpg" alt="" width="318" height="250">
              <div class="middle text-center">
                 <img class="sample-icon" src="./images/sampleworks/icons.png" alt="">
                 <div class="text text-center">Corporate Brochure<br><span>Illustration/print</span>
                 </div>
                <div class="likes"> 
-                 <img src="./images/sampleworks/heart.png">
+                 <img src="./images/sampleworks/heart.png" alt="heart">
                  <span> 138 </span>
                </div>
              </div>
@@ -348,13 +376,13 @@
         <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6  text-center works-columns">
           <a href="">
             <div class="images">
-              <img class="img-fluid" src="./images/Bradley.jpg" alt="" class="image"  width="318" height="250">
+              <img class="img-fluid image" src="./images/Bradley.jpg" alt="" width="318" height="250">
              <div class="middle text-center">
                 <img class="sample-icon" src="./images/sampleworks/icons.png" alt="">
                 <div class="text text-center">Corporate Brochure <span><br>Illustration/print</span>
                 </div>
                <div class="likes"> 
-                 <img src="./images/sampleworks/heart.png">
+                 <img src="./images/sampleworks/heart.png" alt="heart">
                  <span> 138 </span>
                </div>
              </div>
@@ -364,13 +392,13 @@
         <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6  text-center works-columns">
           <a href="">
             <div class="images">
-              <img class="img-fluid" src="./images/Bradley.jpg" alt="" class="image"  width="318" height="250">
+              <img class="img-fluid image" src="./images/Bradley.jpg" alt="" width="318" height="250">
              <div class="middle text-center">
                 <img class="sample-icon" src="./images/sampleworks/icons.png" alt="">
                 <div class="text text-center">Corporate Brochure <span><br>Illustration/print </span>
                 </div>
                <div class="likes"> 
-                 <img src="./images/sampleworks/heart.png">
+                 <img src="./images/sampleworks/heart.png" alt="heart">
                  <span> 138 </span>
                </div>
              </div>
@@ -380,13 +408,13 @@
         <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6  text-center works-columns">
           <a href="">
             <div class="images">
-              <img class="img-fluid" src="./images/Bradley.jpg" alt="" class="image"  width="318" height="250">
+              <img class="img-fluid image" src="./images/Bradley.jpg" alt="" width="318" height="250">
              <div class="middle text-center">
                 <img class="sample-icon" src="./images/sampleworks/icons.png" alt="">
                 <div class="text text-center">Corporate Brochure <span><br>Illustration/print </span>
                 </div>
                <div class="likes"> 
-                 <img src="./images/sampleworks/heart.png">
+                 <img src="./images/sampleworks/heart.png" alt="heart">
                  <span> 138 </span>
                </div>
              </div>
@@ -396,13 +424,13 @@
         <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6 text-center works-columns">
           <a href="">
             <div class="images">
-              <img class="img-fluid" src="./images/Bradley.jpg" alt="" class="image"  width="318" height="250">
+              <img class="img-fluid image" src="./images/Bradley.jpg" alt="" width="318" height="250">
              <div class="middle text-center">
                 <img class="sample-icon" src="./images/sampleworks/icons.png" alt="">
                 <div class="text text-center">Corporate Brochure <span><br>Illustration/print </span>
                 </div>
                <div class="likes"> 
-                 <img src="./images/sampleworks/heart.png">
+                 <img src="./images/sampleworks/heart.png" alt="heart">
                  <span> 138 </span>
                </div>
              </div>
@@ -412,13 +440,13 @@
         <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6 text-center works-columns">
           <a href="">
             <div class="images">
-              <img class="img-fluid" src="./images/Bradley.jpg" alt="" class="image"  width="318" height="250">
+              <img class="img-fluid image" src="./images/Bradley.jpg" alt="" width="318" height="250">
              <div class="middle text-center">
                 <img class="sample-icon" src="./images/sampleworks/icons.png" alt="">
                 <div class="text text-center">Corporate Brochure <span><br> Illustration/print </span>
                 </div>
                <div class="likes"> 
-                 <img src="./images/sampleworks/heart.png">
+                 <img src="./images/sampleworks/heart.png" alt="heart">
                  <span> 138 </span>
                </div>
              </div>
@@ -428,13 +456,13 @@
         <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6 text-center works-columns">
           <a href="">
             <div class="images">
-              <img class="img-fluid" src="./images/Bradley.jpg" alt="" class="image"  width="318" height="250">
+              <img class="img-fluid image" src="./images/Bradley.jpg" alt="" width="318" height="250">
              <div class="middle text-center">
                 <img class="sample-icon" src="./images/sampleworks/icons.png" alt="">
                 <div class="text text-center">Corporate Brochure <span><br>Illustration/print </span>
                 </div>
                <div class="likes"> 
-                 <img src="./images/sampleworks/heart.png">
+                 <img src="./images/sampleworks/heart.png" alt="heart">
                  <span> 138 </span>
                </div>
              </div>
@@ -444,13 +472,13 @@
         <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6  text-center works-columns">
           <a href="">
             <div class="images">
-              <img class="img-fluid" src="./images/Bradley.jpg" alt="" class="image"  width="318" height="250">
+              <img class="img-fluid image" src="./images/Bradley.jpg" alt="" width="318" height="250">
              <div class="middle text-center">
                 <img class="sample-icon" src="./images/sampleworks/icons.png" alt="">
                 <div class="text text-center">Corporate Brochure <span><br>Illustration/print </span>
                 </div>
                <div class="likes"> 
-                 <img src="./images/sampleworks/heart.png">
+                 <img src="./images/sampleworks/heart.png" alt="heart">
                  <span> 138 </span>
                </div>
              </div>
@@ -460,13 +488,13 @@
         <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6 text-center works-columns">
           <a href="">
             <div class="images">
-              <img class="img-fluid" src="./images/Bradley.jpg" alt="" class="image"  width="318" height="250">
+              <img class="img-fluid image" src="./images/Bradley.jpg" alt="" width="318" height="250">
              <div class="middle text-center">
                 <img class="sample-icon" src="./images/sampleworks/icons.png" alt="">
                 <div class="text text-center">Corporate Brochure <span><br> Illustration/print </span>
                 </div>
                <div class="likes"> 
-                 <img src="./images/sampleworks/heart.png">
+                 <img src="./images/sampleworks/heart.png" alt="heart">
                  <span> 138 </span>
                </div>
              </div>
@@ -476,13 +504,13 @@
         <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6  text-center works-columns">
           <a href="">
             <div class="images">
-              <img class="img-fluid" src="./images/Bradley.jpg" alt="" class="image"  width="318" height="250">
+              <img class="img-fluid image" src="./images/Bradley.jpg" alt="" width="318" height="250">
              <div class="middle text-center">
                 <img class="sample-icon" src="./images/sampleworks/icons.png" alt="">
                 <div class="text text-center">Corporate Brochure <span><br> Illustration/print </span>
                 </div>
                <div class="likes"> 
-                 <img src="./images/sampleworks/heart.png">
+                 <img src="./images/sampleworks/heart.png" alt="heart">
                  <span> 138 </span>
                </div>
              </div>
@@ -492,13 +520,13 @@
         <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6  text-center works-columns">
           <a href="">
             <div class="images">
-              <img class="img-fluid" src="./images/Bradley.jpg" alt="" class="image"  width="318" height="250">
+              <img class="img-fluid image" src="./images/Bradley.jpg" alt="" width="318" height="250">
               <div class="middle text-center">
                 <img class="sample-icon" src="./images/sampleworks/icons.png" alt="">
                 <div class="text text-center">Corporate Brochure <span><br>Illustration/print </span>
                 </div>
                <div class="likes"> 
-                 <img src="./images/sampleworks/heart.png">
+                 <img src="./images/sampleworks/heart.png" alt="heart">
                  <span> 138 </span>
                </div>
               </div>
@@ -507,8 +535,8 @@
         </div>
       </div>  <!-- Row Ends here   -->
      <a  href="" id="worksButton" role="button" class="btn btn-default btn-md btn-block"> View all works </a>  
-     <a class="#" href="#" id="section-icon3">
-          <img class=""  src="./images/features/section-icon2.png" width="54" height="54" alt="">
+     <a class="#" href="#sampleWorks" id="section-icon3">
+          <img class=""  src="./images/features/section-icon2.png" width="54" height="54" alt="Sample Works">
      </a>
     </div> <!-- Sample Works Section Ends Here  -->
     <div class="sections" id="facts"> <!-- Facts Section Starts here -->
@@ -519,7 +547,7 @@
           <div class="figures">  
             <span class="diamond-left"></span> 218 
             <span class="diamond-right"></span>
-            <div class="facts-icons"><img src="images/facts/icon1.png"></div>
+            <div class="facts-icons"><img src="images/facts/icon1.png" alt="icon1"></div>
             <div class="facts-subtitles"> completed projects </div>
           </div> 
         </div>
@@ -527,7 +555,7 @@
           <div class="figures"> 
             <span class="diamond-left"></span> 360 
             <span class="diamond-right"></span>
-            <div class="facts-icons"><img src="images/facts/icon2.png"></div>
+            <div class="facts-icons"><img src="images/facts/icon2.png" alt="icon2"></div>
             <div class="facts-subtitles"> house of works/<span>month </span></div>
           </div> 
         </div>
@@ -535,7 +563,7 @@
           <div class="figures">
             <span class="diamond-left"></span> 135 
             <span class="diamond-right"></span> 
-            <div class="facts-icons"><img src="images/facts/icon3.png"></div>
+            <div class="facts-icons"><img src="images/facts/icon3.png" alt="icon3"></div>
             <div class="facts-subtitles"> solved tickets </div>
           </div> 
         </div>
@@ -543,7 +571,7 @@
           <div class="figures">
             <span class="diamond-left"></span> 174
             <span class="diamond-right"></span>
-            <div class="facts-icons"><img src="images/facts/icon4.png"></div>
+            <div class="facts-icons"><img src="images/facts/icon4.png" alt="icon3"></div>
             <div class="facts-subtitles"> satisfied clients </div>
           </div>
         </div> 
@@ -563,17 +591,17 @@
       </div>
     </div> <!-- Panel 1 ends here -->
     <div class="sections" id="team"> <!-- Team Sections Starts here  -->
-      <h2 class="">  <a role="button" class="btn btn-default btn-xl previous"> <img class="" src="./images/team/left.png"> </a>  <img src="./images/offers/left.png" width="28" height="15" alt="shapes"> team <span style="color: #00a99d"> Members </span><img src="./images/offers/right.png" width="28" height="15" alt="shapes"> <a role="button" class="btn btn-default btn-xl next"> <img src="./images/team/right.png"> </a> 
+      <h2 class="">  <a role="button" class="btn btn-default btn-xl previous"> <img class="" src="./images/team/left.png" alt=""> </a>  <img src="./images/offers/left.png" width="28" height="15" alt="shapes"> team <span style="color: #00a99d"> Members </span><img src="./images/offers/right.png" width="28" height="15" alt="shapes"> <a role="button" class="btn btn-default btn-xl next"> <img src="./images/team/right.png" alt=""> </a> 
       </h2>  
       <div class="subtext"> We are some creative people with powerful knowledge &amp; awesome skills benind the scene bringing you the bests </div>
       <div class="row">
         <div class="col-md-3 col-6 col-xxs-12 text-center">
           <div class="team-col">
             <div class="member-photo text-center">
-              <img class="img-fluid pic" src="./images/ryan.jpg" width=267 height="269">
+              <img class="img-fluid pic" src="./images/ryan.jpg" width=267 height="269" alt="">
               <div class="member-name"> Alexis Simpson</div>
               <div class="overlay text-center">
-                  <img class="img-fluid social-icons-merged" src="./images/team/social-icons.png" width="160" height="40">
+                  <img class="img-fluid social-icons-merged" src="./images/team/social-icons.png" width="160" height="40" alt="">
               </div>
             </div>
             <div class="member-info">
@@ -591,10 +619,10 @@
         <div class="col-md-3 col-6 col-xxs-12 text-center">
           <div class="team-col">
             <div class="member-photo">
-              <img class="img-fluid pic" src="./images/ryan.jpg" width="267" height="269">
+              <img class="img-fluid pic" src="./images/ryan.jpg" width="267" height="269" alt="">
               <div class="member-name"> Steve Cole</div>
               <div class="overlay text-center">
-                <img class="social-icons-merged" src="./images/team/social-icons.png">
+                <img class="social-icons-merged" src="./images/team/social-icons.png" alt="">
               </div>
             </div>
             <div class="member-info">
@@ -612,10 +640,10 @@
         <div class="col-md-3 col-6 col-xxs-12 text-center">
           <div class="team-col">
             <div class="member-photo">
-               <img class="img-fluid pic" src="./images/ryan.jpg" width="267" height="269">
+               <img class="img-fluid pic" src="./images/ryan.jpg" width="267" height="269" alt="">
               <div class="member-name"> frank piener </div>
               <div class="overlay text-center">
-                <img class="social-icons-merged" src="./images/team/social-icons.png">
+                <img class="social-icons-merged" src="./images/team/social-icons.png" alt="">
               </div>
             </div>
             <div class="member-info">
@@ -633,10 +661,10 @@
         <div class="col-md-3 col-6 col-xxs-12 text-center">
           <div class="team-col">
             <div class="member-photo">
-              <img class="img-fluid pic" src="./images/ryan.jpg" width="267" height="269">
+              <img class="img-fluid pic" src="./images/ryan.jpg" width="267" height="269" alt="">
               <div class="member-name"> Steve Cole</div>
               <div class="overlay text-center">
-               <img class="social-icons-merged" src="./images/team/social-icons.png">
+               <img class="social-icons-merged" src="./images/team/social-icons.png" alt="social-icons">
               </div>
             </div>
             <div class="member-info">
@@ -668,24 +696,24 @@
           <blockquote class="text-center">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie vulputate lorem, quis ultricies magna gravida.    
           </blockquote> 
           <div id="panel2-btn"> 
-            <button type="button" class="btn btn-default btn-md btn-left"> 
+            <a role="button" class="btn btn-default btn-md btn-left"> 
              <div id="triangle-left"></div> 
-            </button>
-            <button type="button" class="btn btn-default btn-md btn-right"> 
+            </a>
+            <a role="button" class="btn btn-default btn-md btn-right"> 
               <div id="triangle-right"></div>
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </div> <!-- Panel 2 ends here  -->
     <div id="panel3"> <!-- Panel 3 starts here  -->
-      <button type="button" class="btn btn-default btn-md btn-left2"> 
+      <a role="button" class="btn btn-default btn-md btn-left2"> 
         <div id="triangle-left2"></div> 
-      </button>
+      </a> 
       <div class="row text-center"> <!-- row starts here  -->
         <div class="col-sm-3 col-6 col-xxs-12">
           <div class="panel3-col">
-           <div class="logos">
+           <div class="logos" id="logo1">
              <img class="img-fluid" src="./images/team/logo1.png" alt="" width="155" height="81">
            </div>
          </div>
@@ -712,9 +740,9 @@
           </div>
         </div>
       </div> <!-- Row ends here  -->
-      <button type="button" class="btn btn-default btn-md btn-right2"> 
+       <a role="button" class="btn btn-default btn-md btn-right2"> 
           <div id="triangle-right2"></div>
-      </button>
+      </a> 
     </div> <!-- Panel 3 Ends Here  -->
     <div class="sections" id="prices">
       <h2 class=""> <img src="./images/offers/left.png" width="28" height="15" alt="shapes"> Real Cheap <span style="color: #00a99d"> Prices </span><img src="./images/offers/right.png" width="28" height="15" alt="shapes"></h2>
@@ -781,27 +809,27 @@
         </div>
         <div class="" id="social-icons"> 
           <a href="https://www.facebook.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
-            <img src="./images/footer/facebook-icon.png"></a>
+            <img src="./images/footer/facebook-icon.png" alt="facebook"></a>
           <a href="https://twitter.com/" target="_blank" class="btn btn-outline-secondary btn-lg" role="button"> 
-            <img src="./images/footer/twitter.png"></a>
+            <img src="./images/footer/twitter.png" alt="twitter"></a>
           <a href="https://pinterest.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
-            <img src="./images/footer/pinterest-icon.png"></a>
-          <a href="https://pinterest.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
-            <img src="./images/footer/rss-icon.png"></a>
-          <a href="https://pinterest.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
-            <img src="./images/footer/vimeo-icon.png"></a>
-          <a href="https://pinterest.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
-            <img src="./images/footer/youtube-icon.png"></a>
-          <a href="https://pinterest.com/" target="_blank" class="btn btn-outline-secondary btn-lg ">
-            <img src="./images/footer/linkedin-icon.png"></a>
-          <a href="https://pinterest.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
-            <img src="./images/footer/dribbble-icon.png"></a>
-          <a href="https://pinterest.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
-            <img src="./images/footer/devaint-icon.png"></a>
-          <a href="https://pinterest.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
-            <img src="./images/footer/picasa-icon.png"></a>
-          <a href="https://pinterest.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
-            <img src="./images/footer/stumble-icon.png"></a>
+            <img src="./images/footer/pinterest-icon.png" alt="pinterest"></a>
+          <a href="https://www.rss.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
+            <img src="./images/footer/rss-icon.png" alt="rss"></a>
+          <a href="https://vimeo.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
+            <img src="./images/footer/vimeo-icon.png" alt="vimeo"></a>
+          <a href="https://www.youtube.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
+            <img src="./images/footer/youtube-icon.png" alt="youtube"></a>
+          <a href="https://www.linkedin.com/" target="_blank" class="btn btn-outline-secondary btn-lg ">
+            <img src="./images/footer/linkedin-icon.png" alt="linkedin"></a>
+          <a href="https://dribbble.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
+            <img src="./images/footer/dribbble-icon.png" alt="dribbble"></a>
+          <a href="https://www.deviantart.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
+            <img src="./images/footer/devaint-icon.png" alt="devaint"></a>
+          <a href="https://picasa.google.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
+            <img src="./images/footer/picasa-icon.png" alt="picasa"></a>
+          <a href="https://www.stumbleupon.com/" target="_blank" class="btn btn-outline-secondary btn-lg"> 
+            <img src="./images/footer/stumble-icon.png" alt="stumble"></a>
         </div>
       </div> 
       <div class="" id="map-container"> 
@@ -814,12 +842,12 @@
           <form  class="form"> 
             <div class="form-group row">
               <div class="col-sm-12"> 
-                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Email Address">
+                <input type="email" class="form-control" id="InputEmail" placeholder="Email Address">
               </div> 
             </div>
             <div class="form-group row">
               <div class="col-sm-12"> 
-                <input type="name" class="form-control" id="InputName" aria-describedby="emailHelp" placeholder="Name">
+                <input type="text" class="form-control" id="InputName" placeholder="Name">
               </div>
             </div>
             <div class="form-group row">
@@ -847,8 +875,6 @@
  <script src="js/bootstrap.min.js"></script>
  <script src="js/ajax.js"></script>
  <script src="js/script.js" ></script>
-
-
 </body>
 </html>
 
