@@ -10,6 +10,18 @@ $(function () {
   // });
 });
 
+(function (global){
+
+})(window); 
+
+
+$(function () { 
+
+  $("#worksButton").blur(function (event) {
+      $("#multiCollapseExample4" ).collapse('hide');
+  });
+
+});
 
 (function (global){
 
