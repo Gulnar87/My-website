@@ -959,22 +959,22 @@ blockquote:after {
   content: "\201D";
 }
 
-#panel2-btn .btn {
+
+.btn-right, .btn-left {
   height: 30px;
   width: 30px;
   background-color: #383838;
-
 }
 
 .btn-right{
-  padding: 3px 0px 1px 8px;
+  padding: 3px 0px 2px 0px;
 }
 
 .btn-left{
-  padding: 3px 0px 1px 6px;
+  padding: 3px 2px 0px 0px;
 }
 
-#panel2-btn .btn:hover {
+.carousel-control-next:hover, .carousel-control-prev:hover {
   background-color: rgb(228, 228, 228);
   color: #00a99d;
 }
@@ -996,12 +996,12 @@ blockquote:after {
   border-bottom: 10px solid transparent;
 }
 
-#panel2-btn .btn:hover #triangle-right {
+#panel2 .carousel-control-next:hover #triangle-right {
   border-left: 13px solid #00a99d;
 }
 
 
-#panel2-btn .btn:hover #triangle-left {
+#panel2 .carousel-control-prev:hover #triangle-left {
   border-right: 13px solid #00a99d;
 }
 
@@ -2248,7 +2248,7 @@ blockquote:after {
 }
 
 
-#panel2-btn .btn {
+.btn-right, .btn-left {
  margin-top: 20px;
 
 }
