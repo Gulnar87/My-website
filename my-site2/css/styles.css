@@ -1009,6 +1009,12 @@ blockquote:after {
   border-right: 13px solid #00a99d;
 }
 
+.carousel-control-prev , .carousel-control-next {
+  opacity: 1;
+   
+}
+
+
 /*Logos Section */
 
 #panel3 {
@@ -1047,18 +1053,18 @@ blockquote:after {
   background-color: #fff;
 }
 
-.btn-right2 {
+.carousel-control-next2 {
   position: absolute;
   z-index: 1;
   padding: 3px 0px 1px 8px;
   bottom: 45%;
-  right: 2%;
+  right: -4%;
 }
 
-.btn-left2 {
+.carousel-control-prev2 {
   position: absolute;
   z-index: 1;
-  left: 2%;
+  left: -4%;
   bottom: 45%;
   padding: 3px 0px 1px 6px;
 }
@@ -1080,23 +1086,23 @@ blockquote:after {
 }
 
 
-#panel3 .btn-right2:hover {
+#panel3 .carousel-control-next2:hover {
 
 background-color: #00a99d;
 color: ;
 }
 
-#panel3 .btn-left2:hover{
+#panel3 .carousel-control-prev2:hover{
   background-color: #00a99d;
   color: ;
 
 }
 
-#panel3 .btn-right2:hover #triangle-right2 {
+#panel3 .carousel-control-next2:hover #triangle-right2 {
   border-left: 13px solid rgb(228, 228, 228);
 }
 
-#panel3 .btn-left2:hover #triangle-left2 {
+#panel3 .carousel-control-prev2:hover #triangle-left2 {
 border-right: 13px solid rgb(228, 228, 228);
 }
 
@@ -1521,7 +1527,7 @@ right: 47%;
   padding-left: 30px;
 }
 
- .facts-subtitles {
+.facts-subtitles {
   font-size: 13px;
  
  }
@@ -1568,6 +1574,15 @@ font-size: 12px;
   bottom: -5.5%;
 }
 
+
+.carousel-control-next2 {
+  right: -6%;
+}
+
+
+.carousel-control-prev2{
+  left: -6%;
+}
 
 #prices {
   padding-left: 150px;
@@ -1709,15 +1724,14 @@ right: 46.5%;
 }
 
 
- .facts-subtitles {
+.facts-subtitles {
   font-size: 12px;
  
  }
 
- .facts-subtitles span {
+.facts-subtitles span {
   font-size: 10px;
  }
-
 
 .facts-icons {
  margin-top: -8px;
@@ -1754,23 +1768,13 @@ right: 46.5%;
   bottom: -2.5%;
 }
 
-#panel3{
- /* padding-right: 100px;
-  padding-left: 100px;*/
-}
-
-.panel3-col {
-  height: auto;
-  }
-
-.btn-right2 {
-  right: 4%;
+.carousel-control-next2 {
+  right: -7%;
 }
 
 
-.btn-left2 {
-  left: 4%;
- 
+.carousel-control-prev2{
+  left: -7%;
 }
 
 blockquote {
@@ -1902,7 +1906,7 @@ right: 45%;
 }
 
 
-  #section-icon3 {
+#section-icon3 {
   top: 54px;
   right: 44%;
 }
@@ -1953,15 +1957,15 @@ right: 45%;
   left: 15%;
 }
 
-.btn-right2 {
-  bottom: 50%;
-  right: 4%;
+.carousel-control-next2 {
+  bottom: 48%;
+  right: -9%;
 }
 
 
-.btn-left2 {
-  bottom: 50%;
-  left: 4%;
+.carousel-control-prev2 {
+  bottom: 48%;
+  left: -9%;
  
 }
 
@@ -2254,12 +2258,12 @@ blockquote:after {
 
 }
 
-.btn-right2 {
+.carousel-control-next2{
   bottom: 49%;
   right: 4%;
 }
 
-.btn-left2 {
+.carousel-control-prev2 {
   left: 4%;
   bottom: 49%;
 }
@@ -2278,7 +2282,6 @@ blockquote:after {
 /* End Main Content */
 
  }
-
 
 
 
