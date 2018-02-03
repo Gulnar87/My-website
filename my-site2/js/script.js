@@ -16,7 +16,6 @@ $(function () {
 
 
 $(function () { 
-
   $("#worksButton").blur(function (event) {
       $("#multiCollapseExample4" ).collapse('hide');
   });

@@ -740,9 +740,10 @@ height:  120px;
  
 }
 
-#panel1-btn .btn{
+#panel1-btn .btn {
   font-size: 13px;
   color: rgb(96, 96, 96);
+  background-color: rgb(228, 228, 228);
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
