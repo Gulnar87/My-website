@@ -269,15 +269,20 @@ width: 20%;
  color: #fff;
 }
 
+.section-icon-bottom {
+  position: relative;
+  margin-bottom: 30px;
+}
+
 #go-to-top {
   position: absolute;
-  bottom: -8%;
-  left: 50%;
+  bottom: -27px;
+  left: 48%;
 }
 
 #footer-bottom {
  width: 100%;
- height: 100px;
+ height: auto;
 background: #383838; 
 }
 
@@ -362,7 +367,7 @@ background: #383838;
 }
 
 #offers .row {
-  position: relative;
+  /*margin-bottom: 10px;*/
 }
 
 .offer-columns {
@@ -371,11 +376,13 @@ background: #383838;
 
 #offers h3 {
   padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 #offers p {
-  padding: 10px;
- 
+  padding: 1px;
+  margin: 0;
+  text-align: left;
 }
 
 .btn-circle {
@@ -392,16 +399,23 @@ background: #383838;
   background-color: #00a99d;
 }
 
+.read-more {
+  margin-top: 20px;
+}
 .read-more:hover {
 background-color:#00a99d;
 color: #fff;
 }
 
-#section-icon {
+.section-icon1 {
+  position: relative;
+}
+#section-icon1 {
   position: absolute; 
-  bottom: -15%;
+  top: -5px;
   right: 48%;
 }
+
 
 /* Amazing Features Section */
 
@@ -1311,6 +1325,10 @@ color:  rgb(228, 228, 228);
 
 /* Main Content */
 
+#section-icon1 {
+right: 47.5%;
+} 
+
 .ipad1 {
   bottom: 5%;
   right: 5px;
@@ -1445,9 +1463,9 @@ font-size: 22px;
 
 /* Main Content  */
 
-#section-icon {
-  bottom: -14%;
-}
+#section-icon1 {
+right: 47%;
+} 
 
 .ipad1 {
   bottom: 5%;
@@ -1632,11 +1650,9 @@ font-size: 12px;
 
 /* Main Content  */
 
-#section-icon {
-  bottom: -6%;
-  left: 46%;
-}
-
+#section-icon1 {
+right: 46.5%;
+} 
 
 .ipad1 {
   bottom: -10%;
@@ -1762,7 +1778,7 @@ blockquote {
   width: 550px; }
 
 
-  blockquote:before {
+blockquote:before {
   left: 10px;
 }
 
@@ -1796,12 +1812,6 @@ blockquote:after {
 
  /* Header */ 
 
- .text-block {
- /* 
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);*/
-}
 
 .text-block h4 {
  font-size: 15px;
@@ -1858,11 +1868,11 @@ blockquote:after {
 /* End Footer */
 
 /* Main Content */
-#section-icon {
-  bottom: -6%;
-  left: 46%;
 
-}
+#section-icon1 {
+right: 45%;
+} 
+
 
 #section-icon2 {
   bottom: -2.5%;
@@ -2032,10 +2042,8 @@ padding-left: 20%;
   font-size: 18px; 
 }
 
-#section-icon {
-bottom: -4.5%;
-left: 45%;
-transform: translate(2%, 8%);
+#section-icon1 {
+right: 43%;
 } 
 
 #features {
