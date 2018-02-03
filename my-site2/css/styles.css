@@ -555,7 +555,7 @@ height:  120px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 100px;
-  position: relative;
+  /*position: relative;*/
 }
 
 
@@ -641,9 +641,13 @@ height:  120px;
 
 }
 
+.section-icon3{
+  position: relative;
+}
+
 #section-icon3 {
-  position: absolute; 
-  bottom: -4.1%;
+ position: absolute; 
+  top: 74px;
   right: 48%;
 }
 
@@ -1365,11 +1369,6 @@ right: 47.5%;
 
 }
 
-#section-icon3 {
-  bottom: -3%;
-
-}
-
 .diamond-right{
   right: 5%;
 
@@ -1509,8 +1508,7 @@ right: 47%;
 }
 
 #section-icon3 {
-  bottom: -3.5%;
-
+  top: 54px;
 }
 
 #sampleWorks {
@@ -1696,8 +1694,8 @@ right: 46.5%;
 }
 
 #section-icon3 {
-  bottom: -2.8%;
-
+  top: 54px;
+  right: 46%;
 }
 
 #sampleWorks {
@@ -1903,10 +1901,13 @@ right: 45%;
   margin-top: 30px;
 }
 
-#section-icon3 {
-  bottom: -1.7%;
 
+  #section-icon3 {
+  top: 54px;
+  right: 44%;
 }
+
+
 
 #sampleWorks {
   padding-bottom: 80px;
