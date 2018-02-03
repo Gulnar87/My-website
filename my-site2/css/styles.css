@@ -878,7 +878,7 @@ height:  120px;
 
 .next {
   position: absolute;
-  right:55px;
+  right:67px;
   background-color: black;
   width: 28px;
   height: 28px;
@@ -888,7 +888,7 @@ height:  120px;
 
 .previous {
   position: absolute;
-  left: 55px;
+  left: 42px;
   background-color: black;
   width: 28px;
   height: 28px;
@@ -1399,6 +1399,13 @@ right: 47.5%;
   left: 20%;
 }
 
+.next {
+  right:30px;
+}
+
+.previous {
+  left: 30px;
+ }
 
 #advanced-plan {
   width: 75%;
@@ -1537,11 +1544,19 @@ right: 47%;
   margin-bottom: -10px;
 }
 
-
 #team {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.next {
+  right:20px;
+}
+
+.previous {
+  left: 20px;
+ }
+
 
 .diamond-right{
   right: 6%;
@@ -1723,7 +1738,6 @@ right: 46.5%;
   padding-left: 25px;
 }
 
-
 .facts-subtitles {
   font-size: 12px;
  
@@ -1763,6 +1777,14 @@ right: 46.5%;
   width: 60%;
   padding: 11px;
 }
+
+.next {
+  right:75px;
+}
+
+.previous {
+  left: 30px;
+ }
 
 #section-icon4 {
   bottom: -2.5%;
@@ -1951,6 +1973,15 @@ right: 45%;
  margin-bottom: 50px;
 
 }
+
+.next {
+  right: 20px;
+}
+
+.previous {
+  left: 20px;
+ }
+
 
 .member-name {
   width: 70%;
@@ -2197,7 +2228,6 @@ padding-right: 15px;
  margin-bottom: 50px;
  width: 65%; }
 
-
 .col-xxs-12 {
   position: relative;
   min-height: 1px;
@@ -2217,15 +2247,14 @@ padding-right: 15px;
 }
 
 .next {
-  top: 55px;
+  top: 75px;
   right:20px;
 
 }
 
 .previous {
   left: 20px;
-  top: 55px;
-
+  top: 75px;
 }
 
 #section-icon4 { 
