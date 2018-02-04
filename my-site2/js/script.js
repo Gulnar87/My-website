@@ -1,4 +1,62 @@
 
+$(document).ready(function(){
+$('.autoplay').slick({
+  
+// dotsClass: 'slick-dots',
+accessibility: true,
+
+ // Enable Next/Prev arrows
+  arrows: true,
+
+  // prev arrow
+  prevArrow: '<a class="carousel-control-prev2 btn btn-default btn-md" href="#carouselControls" role="button" data-slide="prev"><div id="triangle-left2"></div></a>',
+
+  // next arrow
+  nextArrow: '<a class="carousel-control-next2 btn btn-default btn-md" href="#carouselControls" role="button" data-slide="next"><div id="triangle-right2" ></div></a>',
+
+ autoplay: true,
+ 
+  dots: false,
+  infinite: true,
+  // speed: 300,
+   autoplaySpeed: 3000, 
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+  
+});
+
+});
+
+
+
+
+
+
 $(function () { 
 
   $(".read-more").blur(function (event) {
