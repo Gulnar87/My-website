@@ -34,40 +34,43 @@ body {
   text-shadow: 0px 0px 1px #383838;
 }
 #background .text-block h1, .text-block h2, .text-block h4, .text-block p {
-  -webkit-animation: blurFadeIn 0.1s ease-in 0.4s backwards;
-  -moz-animation: blurFadeIn 0.1s ease-in 0.4s backwards;
-  -ms-animation: blurFadeIn 0.1s ease-in 0.4s backwards;
-  animation: blurFadeIn 0.1s ease-in 0.4s backwards;
+  -webkit-animation: blurFadeIn 0s ease 1s backwards;
+  -ms-animation: blurFadeIn 0s ease-in 1s backwards;
+  animation: blurFadeIn 0s ease-in 1s backwards;
   color: transparent;
   text-shadow: 0px 0px 1px #383838;
 
-
-  -webkit-animation: fadeInRotate 1s linear 1.5s backwards;
-  -moz-animation: fadeInRotate 1s linear 1.5s backwards;
-  -ms-animation: fadeInRotate 1s linear 1.5s backwards;
-  animation: fadeInRotate 1s linear 1.5s backwards;
+  -webkit-animation: fadeInRotate 0.5s linear 1s backwards;
+  -moz-animation: fadeInRotate 0.5s linear 1s backwards;
+  -ms-animation: fadeInRotate 0.5s linear 1s backwards;
+  animation: fadeInRotate 0.5s linear 1s backwards;
 
 }
+
 #background .text-block h1 {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  -ms-animation-delay: 1s;
-  animation-delay: 1s;
+
+ 
+}
+
+#background .text-block h1 {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  animation-delay: 2s;
 }
 #background .text-block p {
-  -webkit-animation-delay: 1.4s;
-  -moz-animation-delay: 1.4s;
-  -ms-animation-delay: 1.4s;
-  animation-delay: 1.4s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 #background .text-block h2 {
-  -webkit-animation-delay: 1.6s;
-  -moz-animation-delay: 1.6s;
-  -ms-animation-delay: 1.6s;
-  animation-delay: 1.6s;
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  animation-delay: 4s;
 }
-
 
 
 @-webkit-keyframes blurFadeIn {
