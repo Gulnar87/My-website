@@ -54,7 +54,61 @@ accessibility: true,
 
 
 
+$(document).ready(function(){
+$('.autoplay2').slick({
+  
+// dotsClass: 'slick-dots',
+// accessibility: true,
 
+ // Enable Next/Prev arrows
+  arrows: true,
+
+  // centerMode: true,
+
+
+  // prev arrow
+  prevArrow: '<a role="button" class="btn btn-default btn-xl previous" data-slide="prev"><img class="" src="./images/team/left.png" alt=""></a>',
+
+  // next arrow
+  nextArrow: '<a role="button" class="btn btn-default btn-xl next" data-slide="next"><img src="./images/team/right.png" alt=""></a>',
+
+ autoplay: true,
+ 
+  dots: false,
+  infinite: true,
+  // speed: 300,
+   autoplaySpeed: 3000, 
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+  
+});
+
+});
 
 
 $(function () { 
