@@ -23,46 +23,71 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-#background .text-block  {
+/*#background .text-block  {
   -webkit-animation: none;
   -moz-animation: none;
   -ms-animation: none;
   animation: none;
   color: transparent;
   text-shadow: 0px 0px 1px #383838;
-}
-#background .text-block h1, .text-block h2, .text-block h4, .text-block p {
-  /*-webkit-animation: blurFadeIn 0s ease 1s backwards;
-  -ms-animation: blurFadeIn 0s ease-in 1s backwards;
-  animation: blurFadeIn 0s ease-in 1s backwards;
-  color: transparent;
-  text-shadow: 0px 0px 1px #383838;*/
-
-  -webkit-animation: fadeInRotate 0.5s linear 0.8s backwards;
-  -moz-animation: fadeInRotate 0.5s linear 0.8s backwards;
-  -ms-animation: fadeInRotate 0.5s linear 0.8s backwards;
-  animation: fadeInRotate 0.5s linear 0.8s backwards;
+}*/
+/* .text-block h1, .text-block h2,  .text-block h4,  .text-block p {
+  -webkit-animation: fadeInRotate 0.3s linear 0.5s backwards;
+  -moz-animation: fadeInRotate 0.3s linear 0.5s backwards;
+  -ms-animation: fadeInRotate 0.3s linear 0.5s backwards;
+  animation: fadeInRotate 0.3s linear 0.5s backwards;
 
 }
 
-#background .text-block h1 {
+.text-block h1 {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.text-block p {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+ .text-block h2 {
   -webkit-animation-delay: 2s;
   -moz-animation-delay: 2s;
   -ms-animation-delay: 2s;
   animation-delay: 2s;
-}
-#background .text-block p {
-  -webkit-animation-delay: 3s;
-  -moz-animation-delay: 3s;
-  -ms-animation-delay: 3s;
-  animation-delay: 3s;
+}*/
+
+
+#background:hover .text-block h1, #background:hover .text-block h2, #background:hover .text-block h4, #background:hover .text-block p {
+  -webkit-animation: fadeInRotate 0.3s linear 0.5s backwards;
+  -moz-animation: fadeInRotate 0.3s linear 0.5s backwards;
+  -ms-animation: fadeInRotate 0.3s linear 0.5s backwards;
+  animation: fadeInRotate 0.3s linear 0.5s backwards;
+
 }
 
-#background .text-block h2 {
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  -ms-animation-delay: 4s;
-  animation-delay: 4s;
+#background:hover .text-block h1 {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+#background:hover .text-block p {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+#background:hover .text-block h2 {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 @-webkit-keyframes fadeInRotate {
@@ -200,8 +225,8 @@ body {
 #nav-list a:hover {
   background-color:#00a99d;
   color: #fff;
-  -webkit-transition-duration: 0.3s; 
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;
   border-radius: 5px;
 }
 
@@ -388,6 +413,34 @@ text-align: center;
   font-size: 26px;
   font-weight: 600;
   line-height: 0.769;
+}
+
+
+ .sections:hover .line-1 {
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-10%);    
+}
+
+/* Animation */
+.sections:hover .anim-typewriter{
+  animation: typewriter 4s steps(44) 0.3s 1 normal both,
+             blinkTextCursor 500ms steps(4) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }
 
 #features h2, #skills h2, #facts h2{
@@ -796,6 +849,8 @@ height:  120px;
 .figures:hover .diamond-right, .figures:hover .diamond-left  {
   background: #00a99d;
 }
+
+
 
 /* Panel 1  */
 
