@@ -402,18 +402,28 @@ text-align: center;
 /* MAIN CONTENT starts here! */
 
 .sections {
-  padding-top: 40px;
+  padding-top: 20px;
 }
+
+
 
 #main-content h2 {
   text-transform: uppercase;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 20px;
   font-size: 26px;
   font-weight: 600;
   line-height: 0.769;
 }
+
+#firstTitle  {
+
+  padding-top: 0px !important;
+ 
+}
+
+
 
 
  .sections:hover .line-1 {
