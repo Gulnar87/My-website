@@ -418,12 +418,8 @@ text-align: center;
 }
 
 #firstTitle  {
-
   padding-top: 0px !important;
- 
 }
-
-
 
 
  .sections:hover .line-1 {
@@ -576,24 +572,17 @@ text-align: center;
   color: rgb(228, 228, 228);
 }
 
-.ipad1 {
+
+ .ipad3 {
   position: absolute;
-  top: 20%;
-  bottom: -24%;
-  right: 10px;
+  top: 15%;
+  right: 8px;
   transform: translate(-10%, -20%); 
  }
 
-.ipad{
-  position: absolute;
-  bottom: -18%;
-  transform: translate(-10%, -20%); 
-  right: 20%;
-}
-
 
 .features-col {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   margin-left: 40px; 
 
 }
@@ -1479,16 +1468,17 @@ color:  rgb(228, 228, 228);
 right: 47.5%;
 } 
 
-.ipad1 {
-  bottom: 5%;
+
+ .ipad3 {
+  position: absolute;
+ bottom: 10%;
   right: 5px;
-  transform: translate(-2%, 5%); 
+ /* transform: translate(-10%, -1%); */
  }
 
-.ipad{
-  bottom: -9%;
-  transform: translate(3%, 14%); 
-}
+ .features-col:nth-child(3) {
+  padding-bottom: 0;
+ }
 
 #section-icon2 {
   bottom: -6%;
@@ -1622,17 +1612,19 @@ font-size: 22px;
 right: 47%;
 } 
 
-.ipad1 {
-  bottom: 5%;
-  right: 5px;
-  transform: translate(4%, 32%); 
 
+ .ipad3 {
+
+ bottom: 25%;
+ right: -30px;
+ transform: translate(-10%, 10%); 
  }
 
-.ipad{
-  bottom: -7%;
-  transform: translate(15%, 22%); 
-}
+
+
+ .features-col:nth-child(3) {
+  padding-bottom: 0;
+ }
 
 #section-icon2 {
   bottom: -4.6%;
@@ -1687,8 +1679,8 @@ right: 47%;
 }
 
 #team {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 .team-col {
@@ -1697,22 +1689,22 @@ right: 47%;
 }
 
 .next {
-  right:40px;
+  right: 30px;
 }
 
 .previous {
-  left: 40px;
+  left: 30px;
  }
 
 
 .diamond-right{
   right: 6%;
-  top: 25%;
+  top: 20%;
 }
 
 .diamond-left {
   left: -6%;
-  top: 25%;
+  top: 20%;
 
 }
 
@@ -1724,7 +1716,7 @@ right: 47%;
 
 
 .email, .phone {
-  font-size: 11px;
+  font-size: 10px;
 }
 
 .fa-envelope, .fa-phone {
@@ -1775,7 +1767,7 @@ right: 47%;
  /* Header */ 
 
  .text-block {
-  transform: translate(-50%, -50%);
+  transform: translate(-25%, -50%);
 }
 
 .text-block h4 { 
