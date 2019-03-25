@@ -234,10 +234,10 @@ body {
  border: 1px solid #00a99d;
 }
 
-.custom-toggler .navbar-toggler-icon {
+/*.custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#00a99d' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
+*/
 /* search button style */
 
 .search-label{
@@ -1425,6 +1425,10 @@ color:  rgb(228, 228, 228);
 
     /* Home Page */
 
+.text-block {
+  transform: translate(-30%, -50%);
+}
+
 .member-name {
  width: 55%;
 }
@@ -1455,6 +1459,11 @@ color:  rgb(228, 228, 228);
 /* End Footer  */
 
 /* Main Content */
+
+
+.text-block {
+  transform: translate(-35%, -50%);
+}
 
 #section-icon1 {
 right: 47.5%;
@@ -1550,7 +1559,7 @@ left: 13%;
   /* Header  */
 
 .text-block {
-  transform: translate(-50%, -50%);
+  transform: translate(-35%, -50%);
 }
 
 .text-block h1 { 
