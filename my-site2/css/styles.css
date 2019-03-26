@@ -1038,14 +1038,14 @@ height:  120px;
   padding-bottom: 15px;
 }
 
-#ceo-btn button span {
+#ceo-name {
   color: #00a99d;
   font-weight: 600;
   font-size: 13px;
   text-transform: uppercase;
 } 
 
-#ceo-btn button  span + span  {
+#ceo {
   font-size: 12px;
   font-family: "Raleway";
   color: rgb(96, 96, 96);
@@ -1064,23 +1064,23 @@ blockquote {
   position: relative;
 }
 
-blockquote:before {
+/*blockquote:before {
   padding-left: 10px;
   content: "\201C";
   font-size: 70px;
   position: absolute;
   left: 18px;
   top: -12px;
-}
+}*/
 
 
-blockquote:after {
+/*blockquote:after {
   position: absolute;   
   font-size:70px;
   right: 132px;
   bottom: -48px;
   content: "\201D";
-}
+}*/
 
 
 .btn-right, .btn-left {
