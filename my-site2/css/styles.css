@@ -1029,13 +1029,13 @@ height:  120px;
   width: 100%;
 }
 
-#ceo-btn  {
+#ceo-btn button {
   margin-top: 50px;
   color: rgb(228, 228, 228);
   font-weight: bold;
   line-height: 1.2;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #ceo-name {
