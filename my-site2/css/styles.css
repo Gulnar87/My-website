@@ -1029,7 +1029,7 @@ height:  120px;
   width: 100%;
 }
 
-#ceo-btn button {
+#ceo-btn .btn {
   margin-top: 50px;
   color: rgb(228, 228, 228);
   font-weight: bold;
