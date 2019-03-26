@@ -1742,7 +1742,7 @@ right: 47%;
 
 
 #prices {
-  padding-left: 150px;
+ /* padding-left: 150px;*/
 }
 .prices-col {
   margin-bottom: 80px;
