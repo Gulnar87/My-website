@@ -1690,10 +1690,12 @@ right: 47%;
 
 .next {
   right: 30px;
+   top: -115px;
 }
 
 .previous {
   left: 30px;
+    top: -115px;
  }
 
 
@@ -1725,7 +1727,7 @@ right: 47%;
 }
 
 #section-icon4 {
-  bottom: -4.5%;
+  bottom: -5%;
 }
 
 
